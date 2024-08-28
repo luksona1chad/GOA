@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video controls width ="400" height ="400">
+    <source src="./assets/media/videos/video.mp4"type ="video/mp4">
+    </video>
+    <audio controls loop>
+        <source src="./assets/media/audio/audio1.mp3"type ="audio/mp3">
+        <audio controls loop>
+            <source src="./assets/media/audio/audio1.mp3"type ="audio/mp3">
+    
+    </audio>
+    <br>
+    <br>
+    <h2>to make video best wey</h2>
+    <video> controls src ="./assets/media/videos/video.mp4" type ="video/videos.mp4"</video>
+    <audio> controls src ="./assets/media/videos/video.mp4" type ="video/videos.mp4"</audio>
+    <br>
+    <audio> controls src ="./assets/media/videos/video.mp3" type ="video/videos.mp4"</audio>
+</body>
+</html>
