@@ -1,0 +1,10 @@
+num_list = [23, 1, 45, 78, 34, 2, 19, 5, 12, 90]
+# 1)
+num_list.remove(min(num_list))
+# 2)
+num_list.insert(0, 100)  
+num_list.append(100)     
+# 3)
+num_list.sort()
+# 4)
+print(num_list)
