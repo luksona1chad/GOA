@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./efasv.java">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./va.py">
+    <title>მდიდარი ვებსაიტი</title>
+</head>
+
+<body>
+    <header>
+        <h1>მოგესალმებით ჩვენს მდიდარ ვებსაიტზე!</h1>
+        <nav>
+            <ul>
+                <li><a href="/">მთავარი</a></li>
+                <li><a href="/contact">კონტაქტი</a></li>
+                <li><a href="/blog">ბლოგი</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>ჩვენს შესახებ</h2>
+        <p>ეს არის ვებსაიტი, რომელიც აღწერს მრავალფეროვან სერვისებს.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ჩემი მდიდარი ვებსაიტი. ყველა უფლებები დაცულია.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <header>
+        <h1>კონტაქტი</h1>
+    </header>
+
+    <main>
+        <form action="/contact" method="POST">
+            <label for="name">სახელი:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">ელ. ფოსტა:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">შეტყობინება:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">გზავნა</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ჩემი მდიდარი ვებსაიტი. ყველა უფლებები დაცულია.</p>
+    </footer>
+    <header>
+        <h1>ბლოგი</h1>
+    </header>
+
+    <main>
+        <h2>ბლოგი 1</h2>
+        <p>ეს არის ჩემი პირველი ბლოგი.</p>
+        <h2>ბლოგი 2</h2>
+        <p>ეს არის ჩემი მეორე ბლოგი.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ჩემი მდიდარი ვებსაიტი. ყველა უფლებები დაცულია.</p>
+    </footer>
+</body>
+
+</html>
