@@ -1,25 +1,208 @@
-<h1>Geeks for Geeks</h1>
-<table border="5">
-    <tr>
-        <td rowspan="2" align="center">table 1</td>
-        <td align="center">table 1</td>
-    </tr>
-    <tr>
-        <td>
-            <table border="5" cellpadding="10" cellspacing="0">
-                <tr>
-                    <td align="center">table 2</td>
-                    <td align="center">table 2</td>
-                </tr>
-                <tr>
-                    <td align="center">table 2</td>
-                    <td align="center">table 2</td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-    <tr>
-        <td align="center">table 1</td>
-        <td align="center">table 1</td>
-    </tr>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Oriented Academy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1b1b32;
+            color: #eaeaea;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0d6118;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #333;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-left: 20px;
+            color: #1b1b32;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #1b1b32;
+            background-color: #eaeaea;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #1b1b32;
+            color: #eaeaea;
+        }
+
+        .join {
+            background-color: #076168;
+            padding: 50px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .join h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .join p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .join .join-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #076168;
+            background-color: #eaeaea;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .join .join-btn:hover {
+            background-color: #1b1b32;
+            color: #eaeaea;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #82c91e;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            color: #ddd;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .images .images {
+            width: 300px;
+            height: 200px;
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .images .images:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 15px 0, 0, 0, 0.3;
+        }
+
+        .images .images img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #146eaa;
+            padding: 20px;
+            text-align: center;
+            color: #eaeaea;
+        }
+        .GOA  a{
+            color: rgba( 0, 0, 0.3);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="GOA""><a href="home.html">GOA</a></h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="join">
+    <h2>Welcome to Goal Oriented Academy</h2>
+    <p>Your path to mastering programming and web development starts here.</p>
+    <a href="https://www.facebook.com/nika11keshelava" class="join-btn">Join GOA</a>
+</section>
+
+<div class="content">
+    <div class="section" id="about">
+        <h3>About Us</h3>
+        <p>Goal Oriented Academy is dedicated to providing the highest quality education in programming and web development. We offer a wide range of courses designed to help you succeed in the tech industry.</p>
+    </div>
+
+    <div class="section images" id="gallery">
+        <div class="images">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2GghbS6gij4B4TwBn8ejsd9AsmyUe73KWUQ&s" alt="Goa">
+        </div>
+        <div class="images">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS01WR4_sCdjdy9TmJmYTSwzI9QmB6pK0wrQQ&s" alt="Goa">
+        </div>
+        <div class="images">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0_BbXQc9lQWKI8X6cvJ5SaOAiGZngQZeMBA&s" alt="Goa">
+        </div>
+    </div>
+
+    <div class="section" id="services">
+        <h3>Our Services</h3>
+        <p>We provide hands-on training, mentorship, and a supportive community to help you reach your goals. Whether you're a beginner or an experienced developer, our courses will guide you through the learning process.</p>
+    </div>
+
+    <div class="section" id="contact">
+        <h3>Contact Us</h3>
+        <p>For more information about our programs, reach out to us via email at info@goalorientedacademy.com or call us at 123-456-7890.</p>
+    </div>
+</div>
+
+<footer>
+    <p>2024 Goal Oriented Academy. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
