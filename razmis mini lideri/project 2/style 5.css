@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(245, 37, 0);
+}
+.box-1{
+    background-color: aqua;
+}
+.conteiner {
+    display:flex;
+}
