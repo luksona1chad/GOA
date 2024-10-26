@@ -7,31 +7,19 @@
     <title>Polar Bears</title>
 </head>
 <body>
-    <header>
-        <h1>All About Polar Bears</h1>
-        <h2>Explore the Life of Polar Bears</h2>
-    </header>
-    <main>
-        <div class="info-container">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCqsaXLDmn9kx8WVdbzn3Zix7a3EvyUjr7CQ&s" alt="Polar Bear" class="polar-bear-image">
-            <p>Polar bears are large carnivorous bears found in the Arctic region. Their thick white fur provides insulation and camouflage against the snow and ice. These magnificent creatures primarily hunt seals and are excellent swimmers.</p>
-            <h3>Fun Facts</h3>
-            <ul>
-                <li>Polar bears can weigh between 900 to 1,600 pounds.</li>
-                <li>They can run up to 25 miles per hour on land.</li>
-                <li>A polar bear's skin is black, which helps absorb heat from the sun.</li>
-                <li>They have a layer of blubber up to 4 inches thick for insulation.</li>
-            </ul>
-        </div>
-        <div class="fact-container">
-            <h3>Share a Polar Bear Fact</h3>
-            <input type="text" id="factInput" placeholder="Enter a fact about polar bears" required>
-            <button id="submitFact" onclick="alert('davit chad')">Submit Fact</button>
-            <p id="feedback"></p>
-        </div>
-    </main>
-    
+    <form>
+        <!-- here user inputs his favourite color -->
+        <label for="colors">Colors:</label>
+        <select name="color" id="colors">
+            <option value="red1">Red</option>
+            <option value="g" selected>Green</option>
+            <option value="b">Blue</option>
+        </select>
 
-
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <input type="submit">
+        <!-- required - საჭირო -->
+    </form>
 </body>
 </html>
