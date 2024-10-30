@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-img{
+    width: 500px;
+    height: 500px;
+background-image: url("./assets/photos/image.png");
+    background-position: center;
+    margin: 50px;
+    border-radius: 20px;
+}
