@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Movie Universe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url("./assets/photo/image.png");
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            text-align: center;
+            color: #ffff00;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+        .movie-list {
+            font-size: 40px;
+            color: aqua;
+        }
+        .movie-list li {
+            list-style-type: none;
+            margin: 20px 0;
+        }
+        .movie-list a {
+            text-decoration: none;
+            color: aqua;
+            transition: color 0.3s, font-size 0.3s;
+        }
+        .movie-list a:hover {
+            color: #ff4500;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Favorite Movie Universe</h1>
+        <ul class="movie-list">
+            <li><a href="#">Star Wars: The Empire Strikes Back</a></li>
+            <li><a href="#">Star Wars: A New Hope</a></li>
+            <li><a href="#">Star Wars: Return of the Jedi</a></li>
+            <li><a href="#">Star Wars: The Force Awakens</a></li>
+        </ul>
+    </div>
+</body>
+</html>
