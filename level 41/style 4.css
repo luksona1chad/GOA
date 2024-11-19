@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ff0000;
+    color: #00eeff;
+}
+
+.superhero-city {
+    width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ffe600;
+}
+
+.hero {
+    background-color: #2200ff;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 12px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: #ff4400;
+}
+
+.villain {
+    background-color: #a600ff;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.villain h2 {
+    font-size: 40px;
+    color: #00bfff;
+}
