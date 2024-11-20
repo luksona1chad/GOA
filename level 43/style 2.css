@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 200;
+    padding: 200;
+    height: 200vh;
+    background-image: linear-gradient(to right, #ff0000, #0800ff, rgb(0, 247, 255));
+}
+
+.intro {
+    text-align: center;
+    padding: 25px;
+    background-color: rgba(180, 8, 8, 0.652);
+    border-radius: 100px;
+}

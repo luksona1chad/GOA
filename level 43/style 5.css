@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(to right, #0800ff, #ff0000);
+}
+
+.survey {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff2a00;
+    width: 250px;
+}
+
+button {
+    padding: 10px;
+    background-color: #8400ff;
+    border: none;
+    color: rgba(5, 122, 26, 0.607);
+    border-radius: 5px;
+    width: 270px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff0004;
+}
+
