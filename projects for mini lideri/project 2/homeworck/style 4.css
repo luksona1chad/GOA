@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff0000;
+    color: #00c86e;
+}
+
+header {
+    background-color: #0000ff;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 38, 0);
+    font-size: 20px;
+}
+
+.hero {
+    background-color: #00d0ff;
+    color: rgb(149, 0, 255);
+    text-align: center;
+    padding: 60px ;
+}
+
+
+h2 {
+    color: #003366;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.dance-category {
+    background-color: #3cff00;
+    border: 5px solid black;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.teacher {
+    background-color: #19700873;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #003366;
+    color: rgba(255, 103, 103, 0.549);
+    text-align: center;
+    padding: 10px ;
+}
+
+footer p {
+    font-size: 15px;
+    color: darkgreen;
+}
