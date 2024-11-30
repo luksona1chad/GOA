@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ff0000;
+    color: #2f00ff;
+}
+
+header {
+    background-color: #fffb00;
+    padding: 20px 30px;
+}
+
+nav .logo {
+    font-size: 28px;
+    color: rgb(21, 255, 0);
+    font-weight: bold;
+}
+
+nav ul li {
+    margin-left: 25px;
+    color: darkblue;
+}
+
+nav ul li a {
+    color: rgb(255, 0, 0);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.hero {
+    background-image: url('./image.png');
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 120px 20px;
+}
+
+
+
+.cta-button {
+    background-color: #0099ff;
+    padding: 15px 30px;
+    color: rgb(217, 255, 0);
+}
+
+.cta-button:hover {
+    background-color: #ff0000;
+}
+
+.about {
+    padding: 60px;
+    text-align: center;
+    background-color: rgb(0, 17, 255);
+}
+
+.about h2 {
+    margin-bottom: 30px;
+}
+
+.about p {
+    color: #00ccff;
+}
+
+.history {
+    padding: 60px;
+    background-color: #7700ff;
+    text-align: center;
+}
+
+.history h2 {
+    margin-bottom: 40px;
+    color: #d9ff00;
+}
+
+.gallery-grid img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.visits h2 {
+    margin-bottom: 20px;
+    color: #bb00ff;
+}
+
+.visits p {
+    margin-bottom: 20px;
+    color: #0400ff;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    color: #59ff00;
+}
+
+.contact-info p {
+    color: #00fbff;
+}
+
+footer {
+    background-color: #f2ff00;
+    color: rgb(38, 255, 0);
+    text-align: center;
+    padding: 15px;
+}
