@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: sans-serif;
+
+}
 .box{
     border: 1px solid black;
     width: 200px;
@@ -13,5 +17,5 @@
     background-color: aqua;
 }
 .conteiner {
-    display:flex;
+    display: flex;
 }
