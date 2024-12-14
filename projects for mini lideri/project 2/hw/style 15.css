@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+}
+
+.tv-collection {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.tv-card {
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    margin: 15px;
+    text-align: center;
+}
+
+.tv-card img {
+    width: 100%;
+    height: auto;
+
+}
+
+.tv-card h2 {
+    color: #333;
+    margin: 10px ;
+}
+
+.price {
+    font-size: 20px;
+    color: #28a745;
+    margin: 10px 0;
+}
+
+.actions {
+    display: flex;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
