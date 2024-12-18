@@ -1,0 +1,72 @@
+/* Reset default styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #005703;
+    color: rgb(0, 34, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 35px;
+}
+
+marquee {
+    font-size: 20px;
+    color: #ff5733;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+    color: #ffe600;
+}
+
+.about-me {
+    background-image: url('https://yt3.googleusercontent.com/wv002nZG78fVumUkOOWhg4ARc3ahz2xe7j7mTkCk_oRZEF1gXS--tqQTMYo66cbT2uz9B5n6XA=s900-c-k-c0x00ffffff-no-rj');
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 255, 229);
+    font-size: 18px;
+}
+
+.favorite-animal {
+    background-color: #ffeb3b;
+}
+
+.goa {
+    background-color: #81c784;
+    color: #2c6e49;
+}
+
+.family {
+    background-color: #ffccbc;
+}
+
+.sports {
+    background-color: #64b5f6;
+}
+
+body {
+    display: block;
+    align-items: center;
+}
+
+section {
+    width: 80%;
+    max-width: 900px;
+}

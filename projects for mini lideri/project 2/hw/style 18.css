@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #3e2a47;
     color: white;
     padding: 20px;
     text-align: center;
@@ -24,28 +24,28 @@ nav ul li a {
     color: white;
 }
 
-.phone-collection {
-    display: block;
-    justify-content: space-around;
+.chocolate-collection {
+    display: block;;
     padding: 30px;
 }
 
-.phone-card {
-    background-color: white;
+.chocolate-card {
+    background-color: #fff;
     padding: 20px;
     width: 250px;
     margin: 15px;
     text-align: center;
+    border-radius: 8px;
 }
 
-.phone-card img {
+
+.chocolate-card img {
     width: 100%;
     height: auto;
-
 }
 
-.phone-card h2 {
-    color: #333;
+.chocolate-card h2 {
+    color: #3e2a47;
     margin: 10px ;
 }
 
@@ -63,14 +63,14 @@ nav ul li a {
 button {
     padding: 10px;
     background-color: #007bff;
-    color: rgb(255, 0, 0);
+    color: white;
+    border: none;
     margin: 5px;
     border-radius: 5px;
 }
 
-
 footer {
-    background-color: #333;
+    background-color: #3e2a47;
     color: white;
     text-align: center;
     padding: 15px;

@@ -17,7 +17,7 @@ nav ul {
 }
 
 nav ul li {
-    display: flex;
+    display: block;
 }
 
 nav ul li a {
@@ -25,7 +25,7 @@ nav ul li a {
 }
 
 .headphone-collection {
-    display: flex;
+    display: block;
     justify-content: space-around;
     padding: 30px;
 }
@@ -56,15 +56,14 @@ nav ul li a {
 }
 
 .actions {
-    display: flex;
+    display: block;
     margin-top: 15px;
 }
 
 button {
     padding: 10px;
     background-color: #007bff;
-    color: white;
-    border: none;
+    color: rgb(255, 0, 0);
     margin: 5px;
     border-radius: 5px;
 }

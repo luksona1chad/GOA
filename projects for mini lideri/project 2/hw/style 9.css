@@ -13,7 +13,7 @@ header {
 }
 
 nav ul li {
-    display:flex;
+    display: flex;
     margin-right: 15px;
 }
 
@@ -22,31 +22,39 @@ nav ul li a {
 }
 
 .car-collection {
-    display: flex;
-    padding: 30px;
+    display: block;
+    padding: 250px;
 }
 
 .car-card {
     background-color: white;
     padding: 20px;
-    width: 250px;
+    width: 80%;
     text-align: center;
+    margin: 15px; 
 }
 
+.car-card img {
+    display: flex; 
+    width: 100%;  
+    height: auto; 
+    margin-bottom: 15px;
+}
 
 .car-card h2 {
     color: #333;
-    margin: 10px ;
+    margin: 10px;
 }
 
 .price {
     font-size: 20px;
     color: #28a745;
-    margin: 10px 0;
+    margin: 10px;
 }
 
 .actions {
     display: flex;
+    justify-content: center;
     margin-top: 15px;
 }
 
@@ -55,8 +63,6 @@ button {
     background-color: #007bff;
     color: white;
 }
-
-
 
 footer {
     background-color: #333;

@@ -6,8 +6,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #0000ff;
+    color: #ff0000;
     padding: 20px;
     text-align: center;
 }
@@ -21,38 +21,36 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #00ff00;
 }
 
-.phone-collection {
+.motorcycle-collection {
     display: block;
-    justify-content: space-around;
     padding: 30px;
 }
 
-.phone-card {
-    background-color: white;
+.motorcycle-card {
+    background-color: #0000ff;
     padding: 20px;
-    width: 250px;
+    width: 300px;
     margin: 15px;
     text-align: center;
+    border-radius: 35px;
 }
 
-.phone-card img {
+.motorcycle-card img {
     width: 100%;
-    height: auto;
-
 }
 
-.phone-card h2 {
-    color: #333;
-    margin: 10px ;
+.motorcycle-card h2 {
+    color: #ff6600;
+    margin: 10px;
 }
 
 .price {
     font-size: 20px;
-    color: #28a745;
-    margin: 10px 0;
+    color: #ff0000;
+    margin: 10px;
 }
 
 .actions {
@@ -62,16 +60,15 @@ nav ul li a {
 
 button {
     padding: 10px;
-    background-color: #007bff;
-    color: rgb(255, 0, 0);
+    background-color: #00690567;
+    color: #ffff00;
     margin: 5px;
     border-radius: 5px;
 }
 
-
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #c300ff;
+    color: #001eff;
     text-align: center;
     padding: 15px;
     width: 100%;

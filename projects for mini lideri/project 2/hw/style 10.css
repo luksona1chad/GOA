@@ -17,14 +17,14 @@ header {
     background-color: #007bff;
     color: white;
     text-align: center;
-    border: 1px solid black;
+    border: 5px solid black;
     margin:5px;
-    display: flex;
+    display: block;
 }
 
 
 .tab-content {
-    display: flex;
+    display: block;
     padding: 20px;
     background-color: white;
     border: 5px solid black;
