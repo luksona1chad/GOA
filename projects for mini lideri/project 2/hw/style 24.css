@@ -85,3 +85,9 @@ footer {
     padding: 15px;
     width: 100%;
 }
+
+button:hover {
+    background-color: #008080;
+    color: #9000ff;
+    font-family: sans-serif;
+}
