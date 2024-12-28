@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+      *{
+            margin: 0;
+            padding: 0;
+            font-family: fantasy;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: fantasy;
+            background-color: #ff0000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .search-box {
+            width: 400px;
+            padding: 20px;
+            background-color: #001eff;
+            border-radius: 25px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 15px;
+            border: 1px solid #22ff00;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 30px;
+            background-color: #4285F4;
+            color: rgb(21, 255, 0);
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background-color: #fffb00;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-box">
+        <h1>Google</h1>
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+
+</body>
+</html>
