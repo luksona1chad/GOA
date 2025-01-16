@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute and relative</title>
+    <style>
+     * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
+     body {
+         font-family: fantasy;
+         background-image: linear-gradient(90 deg, rebeccapurple, darkslateblue);
+        }
+        .box {
+           width: 300px;
+           height:300px
+        }
+        .absolute {
+           position: relative;
+           top: 0;
+           right: 0;
+           background-color: red;
+           color: aqua;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .retalive {
+           position: relative;
+           bottom: 35px;
+           right: 35px;
+           background-color: lightgray;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+
+<div class="retalive box">
+    <span>retalive</span>
+</div>
+<div class="absolute box">
+    <span>absolute</span>
+</div>
+
+</body>
+</html>
