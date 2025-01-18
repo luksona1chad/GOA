@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Card Example</title>
+
+</head>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transform: rotate(45deg);
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    transform: rotate(45deg);
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: rotate(45deg);
+}
+
+
+.card-img {
+    width: 100%;
+    height: 150px;
+    transform: rotate(45deg);
+}
+
+.card-content {
+    padding: 20px;
+    transform: rotate(45deg);
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    transform: rotate(45deg);
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #555;
+    transform: rotate(45deg);
+}
+
+</style>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <img src="https://vignette.wikia.nocookie.net/spongebob/images/e/ef/A_Life_in_a_Day.jpg/revision/latest?cb=20090827195423" alt="image" class="card-img">
+
+        <div class="card-content">
+
+            <h3>Card Title</h3>
+
+            <p>This is a description of the card. You can add any text or information here.</p>
+
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <img src="https://i.pinimg.com/originals/08/0f/37/080f37de4d47fcd7a8fafbdae95ba5a6.jpg" alt="image" class="card-img">
+        <div class="card-content">
+
+            <h3>Card Title 2</h3>
+
+            <p>This is another card description. This is another card with some information.</p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
