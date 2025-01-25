@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        header {
+            background-color: #0d47a1;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3em;
+        }
+
+        header nav ul {
+            display: block;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        header nav ul li {
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 50px;
+            margin: 20px 0;
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.4s ease;
+        }
+
+        .content h2 {
+            font-size: 2.5em;
+            color: #0d47a1;
+        }
+
+        footer {
+            background-color: #0d47a1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .content img:active {
+            transform: rotate(15deg);
+        }
+
+        .content img:active {
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Spider-Man</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#abilities">Abilities</a></li>
+                <li><a href="#villains">Villains</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content" id="about">
+        <img src="https://images.hdqwalls.com/wallpapers/spider-man-in-spider-verse-3b.jpg" alt="Spider-Man">
+        <h2>About Spider-Man</h2>
+        <p>Spider-Man is a superhero with the ability to cling to walls, enhanced strength, and agility, along with his signature web-slinging abilities.</p>
+    </div>
+
+    <div class="content" id="abilities">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.ZRbPz5WeTD6jmMjIFi0gwQHaEK&pid=Api&P=0&h=180" alt="Spider-Man Abilities">
+        <h2>Abilities</h2>
+        <p>Spider-Man has superhuman strength, speed, and agility, along with a "spider-sense" that alerts him to danger.</p>
+    </div>
+
+    <div class="content" id="villains">
+        <img src=https://tse3.mm.bing.net/th?id=OIP.CKzsRPBrhp0ZNQn3yxrhTgHaEK&pid=Api&P=0&h=180" alt="Spider-Man Villains">
+        <h2>Villains</h2>
+        <p>Spider-Man's iconic villains include Green Goblin, Doctor Octopus, and Venom, who constantly challenge him.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Spider-Man Universe</p>
+    </footer>
+</body>
+</html>

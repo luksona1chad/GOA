@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="ka">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+  
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #00ff0d;
+    }
+
+    .figure {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      transition: all 300ms ease-in;
+    }
+
+    .figure1 {
+      background-color: #ff0000;
+      border-radius: 50%;
+      transform: translate(500px,500px) rotate(180deg);
+    }
+
+    .figure2 {
+      background-color: #3300ff;
+      border-radius: 10%;
+      transform: translate(500px,500px) rotate(180deg);
+    }
+
+    .figure3 {
+      background-color: #aa00ff;
+      transform: translate(500px,500px) rotate(180deg);
+    }
+
+    .figure4 {
+      background-color: #eeff00;
+      transform: translate(500px,500px) rotate(180deg);
+    }
+
+    body:active .figure1 {
+      transform: translateX(200px);
+    }
+
+    body:active .figure2 {
+      transform: translateY(200px);
+    }
+
+    body:active .figure3 {
+        transform: translateY(200px);
+    }
+
+    body:active .figure4 {
+      transform: translateX(200px);
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="figure figure1"></div>
+
+  <div class="figure figure2"></div>
+
+  <div class="figure figure3"></div>
+
+  <div class="figure figure4"></div>
+
+</body>
+
+</html>
