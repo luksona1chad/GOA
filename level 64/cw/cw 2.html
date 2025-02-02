@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: linear-gradient(to left, blue,red,green,aqua);
+        overflow: hidden;
+    }
+    .ovter {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        width: 100%;
+        height: 300px;
+    }
+    .ball {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        border-radius: 50%;
+         background: #ffffff;
+         left: -30px;
+         top: 0;
+         animation: movement 3s linear infinite;
+    }
+
+@keyframes movement {
+    16%, 48%, 78% {
+        top: 300px;
+        animation-timing-function: ease-in;
+    }
+    32% {
+        top: 50px;
+        animation-timing-function: ease-in;
+    }
+    62% {
+        top: 150px;
+        animation-timing-function: ease-in;
+    }
+    90% {
+        top: 200px;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        top: 270px;
+        left: 100%;
+        animation-timing-function: ease-out;
+        transform: rotate(360deg);
+    }
+}
+</style>
+
+<body>
+
+    <div class="ovter">
+
+        <div class="ball">
+
+            <div class="">
+
+                <div class="ball"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
