@@ -76,10 +76,16 @@
     }
 
     .section img {
-      width: 100%;
+      width: 650px;
       height: auto;
-      border-radius: 8px;
+      border-radius: 10px;
       margin-bottom: 30px;
+      transition: ease-in;
+    }
+    @media active {
+      .section img {
+        width: 100%;
+      }
     }
 
     .section h2 {
@@ -127,25 +133,6 @@
       text-decoration: none;
     }
 
-    footer a:hover {
-      text-decoration: underline;
-    }
-    
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .section {
-        padding: 20px;
-      }
-
-      header h1 {
-        font-size: 2.5em;
-      }
-
-      nav a {
-        font-size: 1em;
-        margin: 0 15px;
-      }
-    }
   </style>
 </head>
 <body>

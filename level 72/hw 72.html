@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* ! ეს აქრობს წერტილებს ul ებისას */
+    ul {
+        list-style-type: none;
+    }
+
+    @font-face {
+        font-family: "Inter-bold";
+        src: url("../assets/fonts/static/Inter-Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "Inter-regular";
+        src: url("../assets/fonts/static/Inter-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: "Inter-semi-bold";
+        src: url("../assets/fonts/static/Inter-SemiBold.ttf");
+    }
+
+    .font-bold {
+        font-family: "Inter-bold";
+    }
+
+    .font-regular {
+        font-family: "Inter-regular";
+    }
+
+    .font-semi-bold {
+        font-family: "Inter-semi-bold";
+    }
+
+    /* color */
+    .text-green {
+        color: hsl(75, 94%, 57%);
+    }
+
+    .text-white {
+        color: hsl(0, 0%, 100%);
+    }
+
+    .text-gray-700 {
+        color: hsl(0, 0%, 20%);
+    }
+
+    .text-gray-800 {
+        color: hsl(0, 0%, 12%);
+    }
+
+    .text-gray-700 {
+        color: hsl(0, 0%, 8%);
+    }
+
+    /* text align */
+    .text-center {
+        text-align: center;
+    }
+
+    /* background */
+    .bg-gray-700 {
+        background: hsl(0, 0%, 20%);
+    }
+
+    .bg-gray-800 {
+        background: hsl(0, 0%, 12%);
+    }
+
+    .bg-gray-900 {
+        background: hsl(0, 0%, 8%);
+    }
+
+    /* flex box */
+    .flex {
+        display: flex;
+    }
+
+    .flex-col {
+        flex-direction: column;
+    }
+
+    .justify-center {
+        justify-content: center;
+    }
+
+    .item-center {
+        align-items: center;
+    }
+
+    /* height */
+    .h-screen {
+        height: 100vh;
+    }
+
+    /* width */
+    .w-sm {
+        width: 100px;
+    }
+
+    /* paddings */
+    .p-sm {
+        padding: 30px;
+    }
+
+    /* margin */
+    .m-sm {
+        margin: 10px 0;
+    }
+
+    .m-md {
+        margin: 20px 0;
+    }
+
+
+    /* border radius */
+    .rounded-full {
+        border-radius: 100%;
+    }
+
+    .rounded-md {
+        border-radius: 10px;
+    }
+
+    /* button */
+    .btn {
+        padding: 15px 15px;
+        margin: 10px;
+    }
+</style>
+
+<body class="font-regular bg-gray-900 text-white flex flex-col h-screen item-center justify-center">
+
+    <div class="bg-gray-800 text-center p-sm rounded-md">
+
+        <img class="rounded-full w-sm" src="./assets/images/avatar-jessica.jpeg" alt="Jessica Randall website icon" />
+
+        <h1 class="font-regular">Jessica Randall</h1>
+
+        <h4 class="text-green m-sm">London, United Kingdom</h4>
+
+        <p class="m-md">"Front-end developer and avid reader."</p>
+
+        <div>
+            <ul class="flex flex-col">
+
+                <li class="btn bg-gray-700 rounded-md">GitHub</li>
+
+                <li class="btn bg-gray-700 rounded-md">Frontend Mentor</li>
+
+                <li class="btn bg-gray-700 rounded-md">LinkedIn</li>
+
+                <li class="btn bg-gray-700 rounded-md">Twitter</li>
+
+                <li class="btn bg-gray-700 rounded-md">Instagram</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
