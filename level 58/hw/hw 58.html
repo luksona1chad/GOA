@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,79 +8,81 @@
 </head>
 <style>
     * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: fantasy;
-    background-image: linear-gradient(90deg, rebeccapurple, darkslateblue);
-}
-
-.flag {
-  position: relative;
-  width: 200px;
-  height: 120px;
-  margin: 10px;
-}
-
-.germany .stripe {
-  position: absolute;
-  width: 100%;
-  height: 33%;
-}
-
-.germany .black {
-  top: 0;
-  background-color: black;
-}
-
-.germany .red {
-  top: 33%;
-  background-color: red;
-}
-
-.germany .yellow {
-  top: 66%;
-  background-color: yellow;
-}
-
-.italy .stripe {
-  position: absolute;
-  width: 33%;
-  height: 100%;
-}
-
-.italy .green {
-  left: 0;
-  background-color: green;
-}
-
-.italy .white {
-  left: 33%;
-  background-color: white;
-}
-
-.italy .red {
-  left: 66%;
-  background-color: red;
-}
-
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: fantasy;
+        background-image: linear-gradient(90deg, rebeccapurple, darkslateblue);
+    }
+    
+    .flag {
+        position: relative;
+        width: 200px;
+        height: 120px;
+        margin: 10px;
+    }
+    
+    .germany .stripe {
+        position: absolute;
+        width: 100%;
+        height: 33%;
+    }
+    
+    .germany .black {
+        top: 0;
+        background-color: black;
+    }
+    
+    .germany .red {
+        top: 33%;
+        background-color: red;
+    }
+    
+    .germany .yellow {
+        top: 66%;
+        background-color: yellow;
+    }
+    
+    .italy .stripe {
+        position: absolute;
+        width: 33%;
+        height: 100%;
+    }
+    
+    .italy .green {
+        left: 0;
+        background-color: green;
+    }
+    
+    .italy .white {
+        left: 33%;
+        background-color: white;
+    }
+    
+    .italy .red {
+        left: 66%;
+        background-color: red;
+    }
 </style>
+
 <body>
 
-      
-      <div class="flag germany">
+
+    <div class="flag germany">
         <div class="stripe black"></div>
         <div class="stripe red"></div>
         <div class="stripe yellow"></div>
-      </div>
-      
-      <div class="flag italy">
+    </div>
+
+    <div class="flag italy">
         <div class="stripe green"></div>
         <div class="stripe white"></div>
         <div class="stripe red"></div>
-      </div>
-      
+    </div>
+
 </body>
+
 </html>
