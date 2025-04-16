@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seahorses</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'roboto', sans-serif;
+            line-height: 1.6;
+            color: black;
+            background: linear-gradient(red, blue, green);
+        }
+
+        header {
+            background: linear-gradient( #ffd500, rgb, purple, #ff00ff);    
+            color: rgb(0, 0, 0);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        section {
+            background: rgb(0, 242, 255);
+            margin: 50px;
+            padding: 100px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .gallery {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .images {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Seahorses</h1>
+            <p>Beautiful and mysterious creatures of the sea</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>What are Seahorses?</h2>
+            <p>
+                Seahorses are small marine fish known for their horse-like head and curled tail.
+                They swim upright and are part of the genus *Hippocampus*. These fascinating creatures
+                live in shallow tropical and temperate waters and are often found among sea grasses and coral reefs.
+            </p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="images">
+                <img src="./image.png" alt="">
+                <img src="./image copy.png" alt="">
+                <img src="./image copy 2.png" alt="">
+            </div>
+        </div>
+    </section>
+    </section>
+</body>
+
+</html>
