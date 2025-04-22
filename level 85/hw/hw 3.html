@@ -12,6 +12,7 @@
             box-sizing: border-box;
             font-family: 'roboto', sans-serif;
         }
+
         body {
             background: red;
             transition: background 0.5s ease;
@@ -39,7 +40,13 @@
     <h1>Click the button to change background</h1>
     <button onclick="lomi()">Change Background</button>
 
-    <script src="./hw 2.js"></script>
+    <script>
+        function lomi() {
+            document.body.style.background = "blue";
+            console.log("Background changed!");
+            console.log("მე ვარ პანდა ");
+        }
+    </script>
 
 </body>
 
