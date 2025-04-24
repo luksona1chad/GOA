@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <title>counter</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #e6b064 0%, #99c14e 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            transition: background 0.3s;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #d06a6a;
+        }
+
+        .counter {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #4ea0a5;
+            background: #b3a762;
+            padding: 30px 60px;
+            border-radius: 30px;
+            box-shadow: 0 8px 20px rgba(86, 73, 138, 0.15);
+            margin: 20px 0;
+        }
+
+        button {
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 15px;
+            background-color: #5e8e7c;
+            color: rgb(139, 169, 92);
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #665038;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>counter</h1>
+    <div class="counter" id="counter">0</div>
+    <button onclick="increment()">+1</button>
+
+    <script>
+        let counter = 0;
+        const txt = document.getElementById("counter"); // 🟢 ეს აუცილებელია
+
+        function increment() {
+            counter += 1;
+            console.log(counter);
+            txt.textContent = counter;
+        }
+    </script>
+</body>
+
+</html>
