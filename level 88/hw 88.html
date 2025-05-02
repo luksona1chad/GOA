@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(blue, rgb(56, 127, 142), rgb(81, 50, 124));
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 150px;
+            gap: 10px;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .item-red {
+            background: rgba(201, 20, 20, 0.885);
+        }
+
+        .item-orengered {
+            background: orangered;
+        }
+
+        .item-orange {
+            background: orange;
+        }
+
+        .item-green {
+            background: #076b01c9;
+        }
+
+        .item-lightgreen {
+            background: #14ca00;
+        }
+
+        .item-darkgreen {
+            background: #00ff0d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item-red"></div>
+        <div class="item-orengered"></div>
+        <div class="item-orange"></div>
+        <div class="item-green"></div>
+        <div class="item-lightgreen"></div>
+        <div class="item-darkgreen"></div>
+    </div>
+
+</body>
+
+</html>

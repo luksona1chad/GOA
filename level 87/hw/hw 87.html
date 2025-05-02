@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <title>counter</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', sans-serif;
         }
+
         body {
-            background: linear-gradient(135deg, #e6b064 0%, #99c14e 100%);
+            background: linear-gradient(135deg, #895b1a 0%, #82b02c 100%);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -33,7 +34,7 @@
             background: #b3a762;
             padding: 30px 60px;
             border-radius: 30px;
-            box-shadow: 0 8px 20px rgba(86, 73, 138, 0.15);
+            box-shadow: 0 8px 20px rgba(57, 37, 138, 0.15);
             margin: 20px 0;
         }
 
@@ -43,8 +44,8 @@
             margin: 10px;
             border: none;
             border-radius: 15px;
-            background-color: #5e8e7c;
-            color: rgb(139, 169, 92);
+            background-color: #2a9c72;
+            color: rgb(91, 129, 30);
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s;
         }
@@ -59,13 +60,13 @@
 <body>
     <h1>counter</h1>
     <div class="counter" id="counter">0</div>
-    <button onclick="increment()">+1</button>
+    <button onclick="T()">+1</button>
 
     <script>
         let counter = 0;
-        const txt = document.getElementById("counter"); // 🟢 ეს აუცილებელია
+        const txt = document.getElementById("counter");
 
-        function increment() {
+        function T() {
             counter += 1;
             console.log(counter);
             txt.textContent = counter;

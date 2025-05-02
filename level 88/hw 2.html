@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:purple;
+            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .item-red{
+            background: #ff0000;
+            height: 100px;
+        }
+        .item-green{
+            grid-row: 2 / 4;
+            background: #00a200ba;
+            gap: 20px;
+            height: 100px;
+        }
+
+        .item-orangered{
+
+            background: orangered;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item-red"></div>
+    <div class="item-green"></div>
+    <div class="item-green"></div>
+    <div class="item-orangered"></div>>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            height: 100vh;
+            padding: 10px;
+        }
+
+        .item1 {
+            grid-column: 1 / -1;
+            background: #fa982f;
+        }
+
+        .item2 {
+            background: #00920a;
+        }
+
+        .item3 {
+            background: #ed2f2f;
+        }
+
+        .item4 {
+            grid-column: 1 / -1;
+            background: #00c53e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item1"></div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+    <div class="item4"></div>
+</body>
+
+</html>
