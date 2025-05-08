@@ -5,44 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background:purple;
-            gap: 20px;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-        }
-
-        .item-red{
-            background: #ff0000;
-            height: 100px;
-        }
-        .item-green{
-            grid-row: 2 / 4;
-            background: #00a200ba;
-            gap: 20px;
-            height: 100px;
-        }
-
-        .item-orangered{
-
-            background: orangered;
-            height: 100px;
-        }
-    </style>
 </head>
 
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #000000;
+    }
+
+    .grid-container {
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100vh;
+    }
+
+    .grid-item-red {
+        grid-column: 1 / -1;
+        background-color: red;
+    }
+
+    .grid-item-green {
+        background-color: rgb(0, 170, 0);
+    }
+
+    .grid-item-greeen {
+        background-color: green;
+    }
+
+    .grid-item-orange {
+        background-color: orange;
+    }
+</style>
+
 <body>
-    <div class="item-red"></div>
-    <div class="item-green"></div>
-    <div class="item-green"></div>
-    <div class="item-orangered"></div>>
+    <div class="grid-container">
+        <div class="grid-item-red"></div>
+        <div class="grid-item-green"></div>
+        <div class="grid-item-greeen"></div>
+        <div class="grid-item-orange"></div>
+    </div>
 </body>
 
 </html>
