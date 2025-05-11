@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Apple Products</title>
+
+    <style>
+        /* RESET CSS */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            font-size: 35px;
+            background: linear-gradient(to right, #00c8ff, #0004ff);
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .buttons a {
+            font-family: 'Titillium Web', Arial, sans-serif;
+            text-decoration: none;
+            background-color: #ff0000;
+            color: rgb(34, 255, 0);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 35px;
+            transition: 0.2s;
+        }
+
+        .buttons a:hover {
+            background-color: #9000ff;
+        }
+
+        .fixed-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff0000;
+            color: rgb(34, 255, 0);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 35px;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .fixed-button:hover {
+            background-color: #9000ff;
+        }
+
+        .phone h1 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #0004ff;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .phone img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .phone p {
+            color: rgb(28, 190, 55);
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .phone {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .laptop img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .laptop p {
+            color: rgb(28, 190, 55);
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .laptop {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .laptop h2 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #0004ff;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .watch h3 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #0004ff;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .watch img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .watch p {
+            color: rgb(28, 190, 55);
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .watch {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="phone">
+
+        <h1>APPLE</h1>
+
+        <div class="buttons">
+
+            <img src="https://www.apple.com/v/iphone-16-pro/a/images/meta/iphone-16-pro_specs__dnmdxvp6g7wy_og.png"
+                alt="iPhone 16 Pro">
+
+            <p>1.123.456 $</p>
+
+            <a href="https://www.apple.com/iphone/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="laptop">
+
+        <h2>MacBook</h2>
+
+        <div class="buttons">
+
+
+            <img src="https://tse3.mm.bing.net/th?id=OIP.ue0rcFB71HwXrnrvGFFhbQHaHa&pid=Api&P=0&h=180" alt="MacBook">
+
+            <p>1.456 $</p>
+
+            <a href="https://www.apple.com/it/mac/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="watch">
+        <h3>Apple Watch</h3>
+
+        <div class="buttons">
+
+
+            <img src="https://tse4.mm.bing.net/th?id=OIP.QELyA_ITTrFaVpJ4buYPfgHaEK&pid=Api&P=0&h=180"
+                alt="Apple Watch">
+
+            <p>456 $</p>
+
+            <a href="https://www.apple.com/it/watch/">CLICK ME</a>
+
+        </div>
+    </div>
+
+    <a href="https://www.apple.com" class="fixed-button">Go to Apple</a>
+
+</body>
+
+</html>
