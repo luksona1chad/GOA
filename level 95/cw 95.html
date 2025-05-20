@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: oklch(0.784 0.1 152.05);
+        }
+
+        .box::before {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            color: oklch(0.2635 0.1574 261.11);
+            content: "lomi";
+        }
+
+        .box {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            color: oklch(0.3929 0.1648 27.11);
+        }
+
+        .box::after {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            color: oklch(0.2635 0.108 145.69);
+            content: "lomi";
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">LOMI</div>
+
+    </div>
+</body>
+
+</html>
