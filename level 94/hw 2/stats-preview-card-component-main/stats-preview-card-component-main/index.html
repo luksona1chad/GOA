@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mentor | Stats preview card component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --very-dark-blue: hsl(233, 47%, 7%);
+      --dark-desaturated-blue: hsl(244, 38%, 16%);
+      --soft-violet: hsl(277, 64%, 61%);
+      --white: hsl(0, 0%, 100%);
+      --transparent-white: hsla(0, 0%, 100%, 0.75);
+      --transparent-white-heading: hsla(0, 0%, 100%, 0.6);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      background-color: var(--very-dark-blue);
+      color: var(--white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .card {
+      background-color: var(--dark-desaturated-blue);
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 1110px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .card-content {
+      padding: 2.5rem;
+    }
+
+    .card-content h1 {
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-content h1 span {
+      color: var(--soft-violet);
+    }
+
+    .card-content p {
+      color: var(--transparent-white);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .stats {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .stats li {
+      list-style: none;
+    }
+
+    .stats li span:first-child {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .stats li span:last-child {
+      font-family: 'Lexend Deca', sans-serif;
+      color: var(--transparent-white-heading);
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+
+    .attribution {
+      position: absolute;
+      bottom: 1rem;
+      width: 100%;
+      text-align: center;
+      font-size: 15px;
+      color: var(--transparent-white-heading);
+    }
+
+    .attribution a {
+      color: var(--soft-violet);
+    }
+
+    .img-mg {
+      background-color: hsl(277, 64%, 61%);
+    }
+
+    .box {
+      background: hsl(244, 38%, 16%);
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <main class="card">
+      <div class="card-image"></div>
+      <div class="card-content">
+        <img src="./images/image-header-desktop.jpg" alt="" class="img-mg">
+        <h1>Get <span>insights</span> that help your business grow.</h1>
+        <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and
+          overall efficiency.</p>
+        <ul class="stats">
+          <li><span>10k+</span><span>companies</span></li>
+          <li><span>314</span><span>templates</span></li>
+          <li><span>12m+</span><span>queries</span></li>
+        </ul>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </div>
+</body>
+
+</html>
