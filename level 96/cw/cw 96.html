@@ -1,11 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Color Converter</title>
+
     <style>
+
+        /* RESET CSS */
+
         * {
             margin: 0;
             padding: 0;
@@ -115,7 +123,7 @@
         }
 
         .btn-oklch {
-            background:white;
+            background: white;
             color: white;
             border-color: #667eea;
         }
@@ -126,40 +134,59 @@
         }
 
         .btn-lch {
+            color: black;
+        }
 
     </style>
+
 </head>
 
 <body>
+
     <div class="container">
+
         <h1 class="title">Color Converter</h1>
 
         <div class="color-preview" id="colorPreview"></div>
 
         <div class="input-group">
+
             <span class="input-label">O</span>
-            <input type="text" class="color-input" id="oklchInput" placeholder="oklch(0.6 0.2 240)"
-                value="oklch(0.6 0.2 240)">
+
+            <input type="text" class="color-input" id="oklchInput" placeholder="oklch(0.6 0.2 240)" value="oklch(0.6 0.2 240)">
+
         </div>
 
         <div class="input-group">
+
             <span class="input-label">#</span>
+
             <input type="text" class="color-input" id="hexInput" placeholder="#000000">
+
         </div>
 
         <p class="description">Paste HEX/RGB/HSL to convert to OKLCH</p>
 
         <div class="button-group">
+
             <button class="btn btn-oklch" id="oklchBtn">OKLCH</button>
+
             <button class="btn btn-lch" id="lchBtn">LCH</button>
+
         </div>
 
         <div class="footer">
+
             <p>Made at <strong>Evil Martians</strong>,</p>
+
             <p>devtools building consultancy.</p>
+
             <p>By <strong>Andrey Sitnik</strong> & <strong>Roman Shamin</strong></p>
+
         </div>
+
     </div>
+    
 </body>
 
 </html>
