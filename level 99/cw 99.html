@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+        /* CSS RESET */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e9692;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+        }
+        
+        h1 {
+            color: #161cbb;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 1.2 rem;
+            text-align: justify;
+            margin-bottom: 15px;
+            color: #d81b1b;
+        }
+        
+        .box {
+            background-color: #2a9c19;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>Level 99</h1>
+
+        <p>Congratulations! You have reached the final level of this game. Your journey has been remarkable, and you have shown exceptional skill and perseverance.</p>
+
+        <p>As a reward for your dedication, you are granted the title of "Master of the Game". This title is a testament to your hard work and commitment.</p>
+
+        <p>Thank you for playing, and we hope you enjoyed the experience!</p>
+
+        <p>Feel free to share your achievements with others and inspire them to reach new heights.</p>
+
+        <p>Remember, every end is a new beginning. Keep pushing your limits and exploring new challenges!</p>
+
+        <p>Good luck on your future adventures!</p>
+
+        <p>Stay tuned for more updates and new levels in the future!</p>
+
+        <p>Keep gaming!</p>
+
+        <p>Best regards,</p>
+
+        <p>The Game Development Team</p>
+
+        <p>Contact us at:</p>
+
+    </div>
+
+    <script>
+        let array = [1, 2, 3, 4, 5, 6];
+
+        console.log(array);
+
+        array.push("lomi")
+
+        console.log(array);
+
+        array.unshift("oxx mas!", "xox", "soso", "melia grdzelo");
+
+        console.log(array);
+
+        array.pop();
+
+        console.log(array);
+
+        array.shift();
+
+        console.log(array);
+
+        let cat = {
+
+            name: "Mew",
+
+            age: 2,
+
+            nameAndAGe: function() {
+
+                return [this.name, this.age];
+
+            }
+
+        }
+
+        console.log(cat.name);
+
+        console.log(cat["name"]);
+
+        console.log(cat.nameAndAGe());
+
+        console.log(typeof []);
+
+        console.log(typeof {});
+
+        function CarConstructor(model, speed, year, color) {
+
+            this.model = model;
+
+            this.speed = speed;
+
+            this.year = year;
+
+            this.color = color;
+
+        }
+
+
+        function CarConstructor(model, speed, year, engine, light, color, type, wheel, doors, isCabriolet) {
+
+            this.model = model;
+
+            this.speed = speed;
+
+            this.year = year;
+
+            this.color = color;
+
+            this.engine = engine;
+
+            this.light = light;
+
+            this.type = type;
+
+            this.wheels = wheels;
+
+            this.doors = doors;
+
+            this.isCabriolet = isCabriolet
+
+        }
+
+
+
+        const newCar1 = new CarConstructor("BMW", 250, 1965, "rainbow", "V8", "LED", "Sedan", 4, 2, false);
+
+        const newCar = new CarConstructor("mercedes", 50, 2025, "no color", "V12", "Halogen", "Cabriolet", 4, 2, true);
+
+        console.log(newCar1);
+
+        console.log(newCar);
+    </script>
+
+</body>
+
+</html>
+
+</html>
+
+</html>
