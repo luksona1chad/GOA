@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "poppins";
+            height: 100vh;
+            background: #3a34a8;
+            background: linear-gradient(90deg, rgba(58, 52, 168, 1) 0%, rgba(69, 191, 85, 1) 35%, rgba(176, 56, 56, 1) 100%);
+        }
+        
+        .container {
+            background: #22C1C3;
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+            padding: 55px;
+            border-radius: 13px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 15px;
+            color: whitesmoke;
+        }
+        
+        input[type="text"] {
+            width: 250px;
+            border-radius: 25px;
+            border: none;
+            height: 30px;
+            text-align: center;
+        }
+        
+        input[type="text"]:focus {
+            border: none;
+        }
+        
+        button {
+            background: #3F5EFB;
+            background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+            color: black;
+            padding: 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            border: none;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>To Do List</h1>
+
+        <form id="todo-form">
+
+            <input type="text" id="todo-input" placeholder="არვიცი რა უნდა დამეწერა. :დდ">
+
+            <button id="add-btn" type="submit">დამატება</button>
+
+        </form>
+
+        <ul id="todo-list">
+
+        </ul>
+
+    </div>
+
+    <script>
+        const input = document.getElementById("todo-input")
+        const addBtn = document.getElementById("add-btn")
+        const list = document.getElementById("todo-list")
+
+        // ღლაკზე დაჭერისას ფუნქციის გამოძახება 
+
+        addBtn.addEventListener('click', addTask)
+
+        // კრავლიატურაზე enter-ის დაჭერის დროს რაღაც მოვლენა მოხდეს
+        input.addEventListener('keydown', function(e) {
+            if (e.key === "Enter") {
+                e.preventDefault() // გვერდის გადატვირთვისგან შეაჩერებს 
+                addTask() // დაველების დამატების ფუნქციის გამოძახება
+            }
+        })
+
+
+        // დავალების დამატების ფუნქცია
+        function addTask() {
+            const taskText = input.value.trim() // აცილებს ზედმეტ ცარიელ ადგილებს
+
+            // თუ ტექსტი არ არის ცარიელი, მაშინ ვაგრძელებთ 
+            if (taskText !== '') {
+                // ვქმნით li ელემენტს, რომელიც დაემატება სიაში 
+                const li = document.createElement('li')
+
+                // ვქმნით span ელემენტს სადაც დავალებების ტექსი დაიწერება 
+                const span = document.createElement('span')
+                span.textContent = taskText // დავალების ტექსტის განთავსება სპანში 
+
+                // ვქმნით წაშლის ღილაკს თითოეულ დავალებაზე
+                const delBtn = document.createElement('button')
+                delBtn.textContent = '-' // ღილაკზე გამოჩნდება სიტყვა წაშლა 
+                delBtn.className = 'delete-btn' // css კლასი ღილაკის სტილისთვის 
+
+                // წაშლის ღილაკზე დაჭერის დროს li წაიშლება 
+                delBtn.addEventListener('click', () => {
+                    list.removeChild(li)
+
+                })
+
+
+                // დავალების ტექსტის და წაშლილი ღილაკების გაერთიანება li ში 
+
+                li.appendChild(span)
+                li.appendChild(delBtn)
+
+                // li-ს დამატება to do list-ში
+                list.appendChild(li)
+
+                // input ველის გასუფავება ახალი დავალების დასაწერასდ
+                input.value = ''
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>
