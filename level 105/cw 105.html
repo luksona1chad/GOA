@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#78a4ba] flex justify-center items-center text-center h-screen font-[Times_New_Roman] max-w-[300px] w-full mx-auto my-5 p-4">
+    <main class="w-full">
+        <h1 class="text-[rgb(79,170,73)] text-center mb-4 text-xl">To Do List</h1>
+        <form id="formTag" class="flex gap-2">
+            <input type="text" name="text" placeholder="Enter The Task" required class="rounded shadow-[0_0_25px_black] px-2 py-1 w-full" />
+            <button id="submitButton" class="bg-[#c4c72b] cursor-pointer text-white text-sm px-3 py-1 border-none rounded shadow-[0_0_10px_rgba(115,71,167,0.6)] transition-all duration-200 hover:scale-105 hover:shadow-[0_0_15px_rgba(115,71,167,0.8)] hover:bg-[#b1b82d]">
+                Add The Task
+            </button>
+        </form>
+    </main>
+
+    <script>
+        const form = document.getElementById('formTag');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            let textValue = e.target.elements.text.value;
+
+            console.log(textValue);
+
+            const ul = document.createElement('ul'); /*ul */
+            const li = document.createElement('li'); /*li */
+            const Deletebtn = document.createElement('button'); /*შექმნა */
+            const editBtn = document.createElement('button'); /*შექმნა */
+            Deletebtn.textContent = 'Delete'; /* წაშლა  */
+
+            ul.appendChild(li);
+            ul.appendChild(Deletebtn);
+            ul.appendChild(editBtn);
+
+            li.textContent = textValue;
+            editBtn.textContent = 'Edit The Task';
+
+
+            /* ელემენტის წაშლა
+            Deletebtn.addEventListener('click', () => {
+                ul.removeChild(li);
+                ul.removeChild(Deletebtn);
+                ul.removeChild(editBtn);
+            });
+            */
+
+            editBtn.addEventListener('click', () => {
+                const edited = prompt('Please enter a text and edit the task'); /* თუ არაფერს არ დაწერ input ში ამ ტექსტს გამოჩნდება */
+                li.textContent = edited;
+            })
+
+            document.body.appendChild(ul);
+        });
+    </script>
+</body>
+
+</html>
