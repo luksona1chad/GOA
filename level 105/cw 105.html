@@ -4,60 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>To Do List</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-[#78a4ba] flex justify-center items-center text-center h-screen font-[Times_New_Roman] max-w-[300px] w-full mx-auto my-5 p-4">
-    <main class="w-full">
-        <h1 class="text-[rgb(79,170,73)] text-center mb-4 text-xl">To Do List</h1>
-        <form id="formTag" class="flex gap-2">
-            <input type="text" name="text" placeholder="Enter The Task" required class="rounded shadow-[0_0_25px_black] px-2 py-1 w-full" />
-            <button id="submitButton" class="bg-[#c4c72b] cursor-pointer text-white text-sm px-3 py-1 border-none rounded shadow-[0_0_10px_rgba(115,71,167,0.6)] transition-all duration-200 hover:scale-105 hover:shadow-[0_0_15px_rgba(115,71,167,0.8)] hover:bg-[#b1b82d]">
-                Add The Task
+<body class="bg-[#78a4ba] flex justify-center items-start min-h-screen pt-10 font-[Times_New_Roman] px-4">
+    <main class="bg-white shadow-lg rounded p-6 w-full max-w-md">
+        <h1 class="text-[rgb(79,170,73)] text-center mb-4 text-xl font-bold">To Do List</h1>
+
+        <form id="formTag" class="flex gap-2 mb-6">
+            <input type="text" name="text" placeholder="Enter the task" required class="rounded shadow px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-[#c4c72b]" />
+            <button id="submitButton" class="bg-[#c4c72b] text-white px-4 py-2 rounded shadow transition-all duration-200 hover:scale-105 hover:bg-[#b1b82d]">
+                Add Task
             </button>
         </form>
+
+        <ul id="taskList" class="space-y-2">
+
+        </ul>
     </main>
 
     <script>
         const form = document.getElementById('formTag');
+        const taskList = document.getElementById('taskList');
 
+        // submit event (დაჭერის ან Enter-ის დროს)
         form.addEventListener('submit', (e) => {
-            e.preventDefault();
+            e.preventDefault(); // გვერდის გადატვირთვა არ მოხდეს
 
-            let textValue = e.target.elements.text.value;
+            const textValue = e.target.elements.text.value.trim();
 
-            console.log(textValue);
+            if (textValue === '') return; // ცარიელი არ დაემატოს
 
-            const ul = document.createElement('ul'); /*ul */
-            const li = document.createElement('li'); /*li */
-            const Deletebtn = document.createElement('button'); /*შექმნა */
-            const editBtn = document.createElement('button'); /*შექმნა */
-            Deletebtn.textContent = 'Delete'; /* წაშლა  */
+            const li = document.createElement('li');
+            li.className = 'bg-gray-100 flex justify-between items-center px-4 py-2 rounded shadow';
 
-            ul.appendChild(li);
-            ul.appendChild(Deletebtn);
-            ul.appendChild(editBtn);
+            const span = document.createElement('span');
+            span.textContent = textValue;
 
-            li.textContent = textValue;
-            editBtn.textContent = 'Edit The Task';
+            const deleteBtn = document.createElement('button');
+            deleteBtn.textContent = 'Delete';
+            deleteBtn.className = 'text-red-600 hover:text-red-800 font-semibold';
+            deleteBtn.onclick = () => li.remove(); // წაშლის ფუნქცია
 
+            li.appendChild(span);
+            li.appendChild(deleteBtn);
+            taskList.appendChild(li);
 
-            /* ელემენტის წაშლა
-            Deletebtn.addEventListener('click', () => {
-                ul.removeChild(li);
-                ul.removeChild(Deletebtn);
-                ul.removeChild(editBtn);
-            });
-            */
-
-            editBtn.addEventListener('click', () => {
-                const edited = prompt('Please enter a text and edit the task'); /* თუ არაფერს არ დაწერ input ში ამ ტექსტს გამოჩნდება */
-                li.textContent = edited;
-            })
-
-            document.body.appendChild(ul);
+            // ვასუფთავებთ input ველს
+            e.target.reset();
         });
     </script>
 </body>
