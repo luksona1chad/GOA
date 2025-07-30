@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div class="div"></div>
+
+<body>
+    <input type="Search" name="Search" id="s1" placeholder="Search names... " class="border-2 rounded-md border-gray-500 py-2 p-2">
+    <script>
+        const data = [{
+            id: "6883a66d10aeac871f66b3a1",
+            name: "davit",
+            age: 21
+        }, {
+            id: "6883a67b92c24ed7d9cf2d47",
+            name: "konstantine",
+            age: 10
+        }, {
+            id: "6883a6809ce6d66f601dedd4",
+            name: "luka R",
+            age: 11
+        }, {
+            id: "6883a687e6cb99b0f229a2b3",
+            name: "kesane",
+            age: 8
+        }, {
+            id: "6883a68d820b0b0d51b16e5a",
+            name: "luka D",
+            age: 11
+        }, {
+            id: "6883ac97201382657ee8dfee",
+            name: "andria",
+            age: 12
+
+        }]
+        const search = document.getElementById(
+            "s1");
+        search.onchange = (e) => {
+            const value = e.target.value
+            console.log(value)
+            const dataFilter = data.filter((item) => {
+                if (item.name.toLowerCase() === value)
+
+            })
+        }
+        data.map((Item) => {
+            const div = document.createElement("div");
+            const NameSearch = document.createElement("NameSearch");
+            div.textContent = Item.name;
+            nameSearch.append(div);
+        })
+    </script>
+</body>
+
+</html>
+
+</html>
