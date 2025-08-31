@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+body {
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    background-color: #000000be;
+    height: 200vh;
+}
+.form-container {
+    background-color: rgb(0, 17, 255);
+    padding: 50px;
+    border-radius: 10px;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    color: #000000;
+}
+label {
+    margin-bottom: 10px;
+    color: #000000;
+}
+input{
+    width: 100%;
+    padding: 15px;
+    margin: 15px 25px;
+    border-radius: 10px;
+    border: 15px solid #000000;
+    box-sizing: border-box;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+}
+button {
+    background-color: #0004ff;
+    color: rgb(0, 0, 0);
+    padding: 20px 25px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #ff0000;
+}

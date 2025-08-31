@@ -1,0 +1,39 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #6900bec8;
+    color: #004d40;
+}
+
+.dinosaur-journey {
+    width: 900px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    color: #007602da;
+}
+
+.dinosaur {
+    background-color: #00e1ff;
+    padding: 30px;
+    margin: 20px ;
+    border-radius: 10px;
+}
+
+.dinosaur h2 {
+    font-size: 40px;
+    color: #00ff04;
+}
+
+.time-travel {
+    background-color: #ff0000;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.time-travel h2 {
+    font-size: 40px;
+    color: #2b00ff;
+}

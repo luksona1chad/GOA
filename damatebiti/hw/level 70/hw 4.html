@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff8800, #3b7c06);
+        }
+        .post-card {
+            width: 350px;
+            border: 1px solid #ff0000;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #002aff;
+            box-shadow: 0 2px 5px rgb(34, 255, 0);
+        }
+        .post-card h3 {
+            font-size: 22px;
+            margin-top: 10px;
+        }
+        .post-card p {
+            font-size: 16px;
+            color: #f200ff;
+        }
+        .post-card button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: rgb(255, 238, 0);
+            border-radius: 5px;
+        }
+        .post-card button:hover {
+            background-color: #00ffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-card">
+        <h3>Title of the Post</h3>
+        <p>This is a short description of the post. It gives a brief overview of what the post is about.</p>
+        <button>Read More</button>
+    </div>
+</body>
+</html>

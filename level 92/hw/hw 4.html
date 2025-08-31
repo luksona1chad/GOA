@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Huawei</title>
+
+    <style>
+
+        /* RESET CSS */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            font-size: 35px;
+            background: linear-gradient(to right, #ff0000, #00ffff);
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .buttons a {
+            font-family: 'Titillium Web', Arial, sans-serif;
+            text-decoration: none;
+            background-color: #0dff00;
+            color: rgb(0, 42, 255);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 35px;
+            transition: 0.2s;
+        }
+
+        .buttons a:hover {
+            background-color: #8c00ff;
+        }
+
+        .buttton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00ff22;
+            color: rgb(255, 25, 0);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 35px;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .buttton:hover {
+            background-color: #00d5ff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0dff00;
+            font-size: 50px;
+            margin: 20px;
+        }
+
+        .phone {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .Laptop {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .watch {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .ipad {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .TV {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .Airpods {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .headphones {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .phone h1 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin: 20px;
+        }
+
+        .Laptop h4 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin: 20px;
+        }
+
+        .watch h3 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin: 20px;
+        }
+
+        .ipad h4 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin: 20px;
+        }
+
+        .TV h4 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin: 20px;
+        }
+
+
+        .Airpods h4 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin: 20px;
+        }
+
+        .headphones h4 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            margin: 20px;
+        }
+
+        .phone h1 {
+            color: #eeff00;
+        }
+
+        .Laptop h4 {
+            color: #ff0000;
+        }
+
+        .watch h3 {
+            color: #002fff;
+        }
+
+        .ipad h4 {
+            color: hwb(10 16% 21%);
+        }
+
+        .TV h4 {
+            color: #00ffff;
+        }
+
+        .Airpods h4 {
+            color: #00ff80;
+        }
+
+        .headphones h4 {
+            color: #ff0000;
+        }
+
+        .phone img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .Laptop img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .watch img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .ipad img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .TV img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .Airpods img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .headphones img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .phone p {
+            color: rgb(0, 255, 17);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .Laptop p {
+            color: rgb(255, 0, 0);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .ipad p {
+            color: rgb(0, 13, 255);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .TV p {
+            color: rgb(238, 255, 0);
+            font-size: 40px;
+            text-align: center;
+        }
+
+
+        .headphones p {
+            color: rgb(255, 60, 0);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .watch p {
+            color: rgb(136, 0, 255);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .Airpods p {
+            color: rgb(0, 255, 217);
+            font-size: 40px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>HUAWEI</h1>
+
+    <div class="phone">
+
+        <h1>Smartphone</h1>
+
+        <div class="buttons">
+
+            <img src="https://images.indianexpress.com/2024/09/huawei-mate-xt.jpg" alt="Huawei Smartphone">
+
+            <p>899 $</p>
+
+            <a href="https://consumer.huawei.com/en/phones/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="Laptop">
+
+        <h4>Huawei Laptop</h4>
+
+        <div class="buttons">
+
+            <img src="https://tse1.mm.bing.net/th?id=OIP.H28lSSM8IkOPO_0afcNNrwHaEK&pid=Api&P=0&h=180" alt="Huawei Laptop">
+
+            <p>1.099 $</p>
+
+            <a href="https://consumer.huawei.com/en/laptops/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="watch">
+
+        <h3>Huawei Watch</h3>
+
+        <div class="buttons">
+
+            <img src="https://tse4.mm.bing.net/th?id=OIP.kUPQi0vC5NgPWU4FFjY5uAHaGj&pid=Api&P=0&h=180" alt="Huawei Watch">
+
+            <p>299 $</p>
+
+            <a href="https://consumer.huawei.com/en/wearables/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="ipad">
+
+        <h4>Huawei Tablet</h4>
+
+        <div class="buttons">
+
+            <img src="https://s1.eestatic.com/2021/04/23/elandroidelibre/575955707_183529532_1706x960.jpg" alt="Huawei Tablet">
+
+            <p>849 $</p>
+
+            <a href="https://consumer.huawei.com/en/tablets/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="TV">
+
+        <h4>Huawei Smart TV</h4>
+
+        <div class="buttons">
+
+            <img src="https://i.blogs.es/3a1444/huawei-vision-s-1/1366_2000.jpeg" alt="Huawei TV">
+
+            <p>1.299 $</p>
+
+            <a href="https://consumer.huawei.com/en/tvs/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="Airpods">
+
+        <h4>Huawei FreeBuds</h4>
+
+        <div class="buttons">
+
+            <img src="https://tse4.mm.bing.net/th?id=OIP.-LpZmiCnIiIcCgkLFrvIjwHaFk&pid=Api&P=0&h=180" alt="Huawei FreeBuds">
+
+            <p>229 $</p>
+
+            <a href="https://consumer.huawei.com/en/audio/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="headphones">
+
+        <h4>Huawei Headphones</h4>
+
+        <div class="buttons">
+
+            <img src="https://tse2.mm.bing.net/th?id=OIP.0AI8e_Vnsb_dsJuuBVRs3AHaFj&pid=Api&P=0&h=180" alt="Huawei Headphones">
+
+            <p>399 $</p>
+
+            <a href="https://consumer.huawei.com/en/headphones/">CLICK ME</a>
+
+        </div>
+        
+    </div>
+
+    <a href="https://www.huawei.com" class="buttton">Go to Huawei</a>
+
+</body>
+
+</html>

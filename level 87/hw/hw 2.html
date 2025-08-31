@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <title>სახელი</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #9f8b58;
+        }
+
+        .names {
+            color: rgb(44, 44, 80);
+            font-size: 5rem;
+            margin: 20px;
+        }
+
+        h1{
+            color: rgb(56, 162, 104);
+        }
+
+        button {
+            font-size: 1.5rem;
+            padding: 15px 30px;
+            background-color: #4c9c4c;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>38 ჯგუფის სახელები</h1>
+    <div id="names" class="names"></div>
+    <button onclick="generateName()">ახალი სახელი</button>
+
+    <script>
+        const names = ["ლუკა", "კესანე", "კონსტანტინე", "ანდრია", "რაზმაძე"];
+        const nameDiv = document.getElementById("names");
+
+        function generateName() {
+            const randomIndex = Math.floor(Math.random() * names.length);
+            nameDiv.textContent = names[randomIndex];
+        }
+    </script>
+
+</body>
+
+</html>

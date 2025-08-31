@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul li {
+    display: flex;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+.car-collection {
+    display: block;
+    padding: 250px;
+}
+
+.car-card {
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    margin: 15px; 
+}
+
+.car-card img {
+    display: flex; 
+    width: 100%;  
+    height: auto; 
+    margin-bottom: 15px;
+}
+
+.car-card h2 {
+    color: #333;
+    margin: 10px;
+}
+
+.price {
+    font-size: 20px;
+    color: #28a745;
+    margin: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}

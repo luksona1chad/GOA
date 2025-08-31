@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            width: 200px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%; 
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        button{
+            background-color: #ff0000;
+            color: rgb(43, 0, 255);
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Toy Store</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="https://i5.walmartimages.com/asr/5adb7e27-9003-4087-9468-c1f9d527672d.7e9653765bc35e4dcd87e05a99974993.jpeg" alt="Toy">
+            <h3>Building Blocks</h3>
+            <p>$29.99</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.uFnm9o69kTpQLJ0kZ6824QHaFd&pid=Api&P=0&h=180" alt="Toy">
+            <h3>Dollhouse</h3>
+            <p>$59.99</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Toy Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

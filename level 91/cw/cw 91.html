@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Change Background</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: rgb(41, 159, 37);
+        }
+
+        button {
+            padding: 100px;
+            border-radius: 10px;
+            background-color: #3070a3;
+            color: rgb(193, 41, 41);
+        }
+
+        button:hover {
+            background-color: #25b5a2;
+        }
+    </style>
+
+</head>
+
+<body id="body">
+
+
+    <button onclick="T()">Change Background</button>
+
+    <script>
+
+        function T() {
+
+            document.body.style.background = "blue";
+
+        }
+    </script>
+
+</body>
+
+</html>

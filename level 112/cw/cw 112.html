@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOA Website</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="./script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="flex justify-center flex-col pl-[180px] bg-[#48516a]">
+    <aside class="w-[180px] h-screen bg-[#191c25] flex flex-col fixed left-[0] top-[0]">
+        <div class="w-full flex justify-start items-center gap-[15px] text-[26px] text-white font-[600] mt-[15px] pl-[12px]">
+            <img src="./goa.png" class="w-[50px] h-[50] rounded-full border-[2px] border-[#3364f4]">
+            <h3>GOA</h3>
+        </div>
+        <div class="flex flex-col items-center mt-[20px]">
+            <div onclick="location.href='#home'" class="text-[20px] text-white font-[500] mt-[5px] cursor-pointer w-[95%] h-[40px] flex pl-[10px] items-center hover:bg-[#2b303d] rounded-[5px]">
+                Home
+            </div>
+            <div onclick="location.href='#staff'" class="text-[20px] text-white font-[500] mt-[5px] cursor-pointer w-[95%] h-[40px] flex pl-[10px] items-center hover:bg-[#2b303d] rounded-[5px]">
+                Staff
+            </div>
+            <div onclick="location.href='#join'" class="text-[20px] text-white font-[500] mt-[5px] cursor-pointer w-[95%] h-[40px] flex pl-[10px] items-center hover:bg-[#2b303d] rounded-[5px]">
+                Join
+            </div>
+            <div onclick="location.href='#courses'" class="text-[20px] text-white font-[500] mt-[5px] cursor-pointer w-[95%] h-[40px] flex pl-[10px] items-center hover:bg-[#2b303d] rounded-[5px]">
+                Courses
+            </div>
+        </div>
+        <div class="flex flex-col items-center absolute bottom-[0] w-full mb-[10px]">
+            <div class="text-[20px] text-white font-[500] mt-[5px] cursor-pointer w-[95%] h-[40px] flex pl-[10px] items-center hover:bg-[#2b303d] rounded-[5px]">
+                Settings
+            </div>
+            <div class="text-[20px] text-white font-[500] mt-[5px] cursor-pointer w-[95%] h-[40px] flex pl-[10px] items-center hover:bg-[#2b303d] rounded-[5px]">
+                Logout
+            </div>
+        </div>
+    </aside>
+    <section class="flex justify-center items-center flex-col gap-[60px] mt-[220px]" id="home">
+        <h2 class="text-[25px] text-[#fff] text-[60px] font-[600]">Welcome to GOA!</h2>
+        <div class="flex gap-[20px]">
+            <button class="bg-[#0080ff] w-[150px] h-[50px] rounded-[50px] text-[18px] text-[#fff] cursor-pointer hover:bg-[#005dba]" onclick="window.location.href='https://www.facebook.com/nika11keshelava'">
+                Facebook
+            </button>
+            <button class="bg-[#ff1b1b] w-[150px] h-[50px] rounded-[50px] text-[18px] text-[#fff] cursor-pointer hover:bg-[#8c1717]" onclick="window.location.href='https://www.facebook.com/nika11keshelava'">
+                Youtube
+            </button>
+            <button class="bg-[#ff00ff] w-[150px] h-[50px] rounded-[50px] text-[18px] text-[#fff] cursor-pointer hover:bg-[#9c139c]">
+                Instagram
+            </button>
+        </div>
+    </section>
+    <section id="staff" class="flex justify-center items-center mt-[320px] gap-[40px]">
+        <div class="w-[200px] h-[300px] bg-[#4e618f] rounded-[15px] flex flex-col items-center text-center relative">
+            <h3 class="mt-[15px] text-[20px] text-[#fff] font-[500]">Nika Keshelava</h3>
+            <p class="mt-[5px] text-[16px] text-[#fff] font-[400]">CEO of GOA</p>
+            <button class="absolute bottom-[0] mb-[20px] w-[150px] h-[40px] rounded-[5px] border-[2px] border-[#fff] text-[#fff] text-[15px] font-[500] cursor-pointer">More
+                Info</button>
+        </div>
+        <div class="w-[200px] h-[300px] bg-[#4e618f] rounded-[15px] flex flex-col items-center text-center relative">
+            <h3 class="mt-[15px] text-[20px] text-[#fff] font-[500]">Davit Grdzelishvili</h3>
+            <p class="mt-[5px] text-[16px] text-[#fff] font-[400]">Mentor and Moderator.</p>
+            <button class="absolute bottom-[0] mb-[20px] w-[150px] h-[40px] rounded-[5px] border-[2px] border-[#fff] text-[#fff] text-[15px] font-[500] cursor-pointer">More
+                Info</button>
+        </div>
+        <div class="w-[200px] h-[300px] bg-[#4e618f] rounded-[15px] flex flex-col items-center text-center relative">
+            <h3 class="mt-[15px] text-[20px] text-[#fff] font-[500]">Shio Elikashvili</h3>
+            <p class="mt-[5px] text-[16px] text-[#fff] font-[400]">Mentor assistant.</p>
+            <button class="absolute bottom-[0] mb-[20px] w-[150px] h-[40px] rounded-[5px] border-[2px] border-[#fff] text-[#fff] text-[15px] font-[500] cursor-pointer">More
+                Info</button>
+        </div>
+        <div class="w-[200px] h-[300px] bg-[#4e618f] rounded-[15px] flex flex-col items-center text-center relative">
+            <h3 class="mt-[15px] text-[20px] text-[#fff] font-[500]">Gabriel Molodini</h3>
+            <p class="mt-[5px] text-[16px] text-[#fff] font-[400]">Mentor and mini mentor.</p>
+            <button class="absolute bottom-[0] mb-[20px] w-[150px] h-[40px] rounded-[5px] border-[2px] border-[#fff] text-[#fff] text-[15px] font-[500] cursor-pointer">More
+                Info</button>
+        </div>
+        <div class="w-[200px] h-[300px] bg-[#4e618f] rounded-[15px] flex flex-col items-center text-center relative">
+            <h3 class="mt-[15px] text-[20px] text-[#fff] font-[500]">Giorgi Abuashvili</h3>
+            <p class="mt-[5px] text-[16px] text-[#fff] font-[400]">Mentor's Assistant and Moderator.</p>
+            <button class="absolute bottom-[0] mb-[20px] w-[150px] h-[40px] rounded-[5px] border-[2px] border-[#fff] text-[#fff] text-[15px] font-[500] cursor-pointer">More
+                Info</button>
+        </div>
+    </section>
+    <section id="courses">
+        <section id="join" class="flex justify-center items-center mt-[320px] gap-[40px]">
+            <div class="w-[200px] h-[300px] bg-[#4e618f] rounded-[15px] flex flex-col">
+                <h3 class="mt-[15px] text-[20px] text-[#fff] font-[500] relative ml-[10px]">Web Development</h3>
+                <p class="mt-[5px] text-[16px] text-[#fff] font-[400]">- HTML</p>
+                <p class="mt-[5px] text-[16px] text-[#fff] font-[400]">- CSS</p>
+                <p class="mt-[5px] text-[16px] text-[#fff] font-[400]">- JavaScript</p>
+                <button class="absolute bottom-[0] mb-[20px] w-[150px] h-[40px] rounded-[5px] border-[2px] border-[#fff] text-[#fff] text-[15px] font-[500] cursor-pointer">Learn
+                    More</button>
+            </div>
+        </section>
+    </section>
+    <section id="join" class="flex justify-center items-center mt-[320px] gap-[40px]">
+        <div class="w-[200px] h-[300px] bg-[#4e618f] rounded-[15px] flex flex-col items-center text-center relative">
+            <h3 class="mt-[15px] text-[20px] text-[#fff] font-[500]">Speed 1</h3>
+            <p class="mt-[5px] text-[16px] text-[#fff] font-[400]">1 lesson per week</p>
+            <button class="absolute bottom-[0] mb-[20px] w-[150px] h-[40px] rounded-[5px] border-[2px] border-[#fff] text-[#fff] text-[15px] font-[500] cursor-pointer">Join</button>
+        </div>
+        <div class="w-[200px] h-[300px] bg-[#4e618f] rounded-[15px] flex flex-col items-center text-center relative">
+            <h3 class="mt-[15px] text-[20px] text-[#fff] font-[500]">Speed 2</h3>
+            <p class="mt-[5px] text-[16px] text-[#fff] font-[400]">2 lesson per week</p>
+            <button class="absolute bottom-[0] mb-[20px] w-[150px] h-[40px] rounded-[5px] border-[2px] border-[#fff] text-[#fff] text-[15px] font-[500] cursor-pointer">Join</button>
+        </div>
+        <div class="w-[200px] h-[300px] bg-[#4e618f] rounded-[15px] flex flex-col items-center text-center relative">
+            <h3 class="mt-[15px] text-[20px] text-[#fff] font-[500]">Speed 3</h3>
+            <p class="mt-[5px] text-[16px] text-[#fff] font-[400]">3 lesson per week</p>
+            <button class="absolute bottom-[0] mb-[20px] w-[150px] h-[40px] rounded-[5px] border-[2px] border-[#fff] text-[#fff] text-[15px] font-[500] cursor-pointer">Join</button>
+        </div>
+        <div class="w-[200px] h-[300px] bg-[#4e618f] rounded-[15px] flex flex-col items-center text-center relative">
+            <h3 class="mt-[15px] text-[20px] text-[#fff] font-[500]">Speed 4</h3>
+            <p class="mt-[5px] text-[16px] text-[#fff] font-[400]">4 lesson per week</p>
+            <button class="absolute bottom-[0] mb-[20px] w-[150px] h-[40px] rounded-[5px] border-[2px] border-[#fff] text-[#fff] text-[15px] font-[500] cursor-pointer">Join</button>
+        </div>
+    </section>
+</body>
+
+</html>

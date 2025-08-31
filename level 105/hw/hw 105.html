@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-[#78a4ba] flex justify-center items-start min-h-screen pt-10 font-[Times_New_Roman] px-4">
+    <main class="bg-white shadow-lg rounded p-6 w-full max-w-md">
+        <h1 class="text-[rgb(79,170,73)] text-center mb-4 text-xl font-bold">To Do List</h1>
+
+        <form id="formTag" class="flex gap-2 mb-6">
+            <input type="text" name="text" placeholder="Enter the task" required class="rounded shadow px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-[#c4c72b]" />
+            <button id="submitButton" class="bg-[#c4c72b] text-white px-4 py-2 rounded shadow transition-all duration-200 hover:scale-105 hover:bg-[#b1b82d]">
+                Add Task
+            </button>
+        </form>
+
+        <ul id="taskList" class="space-y-2">
+
+        </ul>
+    </main>
+
+    <script>
+        const form = document.getElementById('formTag');
+        const taskList = document.getElementById('taskList');
+
+        // submit event (დაჭერის ან Enter-ის დროს)
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); // გვერდის გადატვირთვა არ მოხდეს
+
+            const textValue = e.target.elements.text.value.trim();
+
+            if (textValue === '') return; // ცარიელი არ დაემატოს
+
+            const li = document.createElement('li');
+            li.className = 'bg-gray-100 flex justify-between items-center px-4 py-2 rounded shadow';
+
+            const span = document.createElement('span');
+            span.textContent = textValue;
+
+            const deleteBtn = document.createElement('button');
+            deleteBtn.textContent = 'Delete';
+            deleteBtn.className = 'text-red-600 hover:text-red-800 font-semibold';
+            deleteBtn.onclick = () => li.remove(); // წაშლის ფუნქცია
+
+            li.appendChild(span);
+            li.appendChild(deleteBtn);
+            taskList.appendChild(li);
+
+            // ვასუფთავებთ input ველს
+            e.target.reset();
+        });
+    </script>
+</body>
+
+</html>

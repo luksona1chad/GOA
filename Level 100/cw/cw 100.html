@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .slider-container {
+            max-width: 800px;
+        }
+        
+        .slider-img img {
+            width: 100%;
+        }
+        
+        .slider-img {
+            width: 800px;
+        }
+        
+        .slider-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .slider-buttons button {
+            padding: 20px 25px;
+            border: none;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: all 300ms ease;
+        }
+        
+        .slider-buttons button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider-container">
+        <div class="slider-img">
+            <img id="img" src="./assets/photos/1.png" alt="" />
+        </div>
+        <div class="slider-buttons">
+            <!-- 0                   1
+            [<button>left</button>, <button>right</button>] 
+            -->
+            <button>left</button>
+            <button>right</button>
+        </div>
+    </div>
+    <script>
+        const img = document.getElementById("img");
+        const buttonsArray = document.querySelectorAll(".slider-buttons button");
+        const imgArray = [
+            "./assets/photos/1.png",
+            "./assets/photos/2.png",
+            "./assets/photos/3.png",
+            "./assets/photos/4.png",
+        ];
+        let counter = 0;
+        buttonsArray[0].addEventListener("click", function() {
+            console.log("left");
+            img.src = imgArray[counter];
+            if (counter <= 0) {
+                counter = 0;
+            } else {
+                counter--
+            }
+
+        });
+        buttonsArray[1].addEventListener("click", function() {
+            console.log("right");
+            img.src = imgArray[counter];
+            counter++
+        });
+    </script>
+</body>
+
+</html>

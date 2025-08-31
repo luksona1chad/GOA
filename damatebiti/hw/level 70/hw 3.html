@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ffd000, #0d00ff);
+        }
+        .vertical-menu {
+            width: 200px;
+        }
+        .vertical-menu a {
+            display: block;
+            padding: 10px;
+            color: black;
+            background-color: #7b00ff;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        .vertical-menu a:active {
+            background-color: #00ffe1;
+        }
+    </style>
+</head>
+<body>
+    <div class="vertical-menu">
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </div>
+</body>
+</html>

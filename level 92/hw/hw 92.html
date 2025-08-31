@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>APPLE</title>
+
+    <style>
+        /* RESET CSS */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            font-size: 35px;
+            background: linear-gradient(to right, #00c8ff, #0004ff);
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .buttons a {
+            font-family: 'Titillium Web', Arial, sans-serif;
+            text-decoration: none;
+            background-color: #ff0000;
+            color: rgb(34, 255, 0);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 35px;
+            transition: 0.2s;
+        }
+
+        .buttons a:hover {
+            background-color: #9000ff;
+        }
+
+        .buttton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff0000;
+            color: rgb(34, 255, 0);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 35px;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .buttton:hover {
+            background-color: #9000ff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0004ff;
+            font-size: 50px;
+            margin: 20px;
+        }
+
+        .phone h1 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #00ff37;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .phone img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .phone p {
+            color: rgb(0, 225, 255);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .phone {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .laptop img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .laptop p {
+            color: rgb(255, 0, 0);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .laptop {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .laptop h2 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #7300ff;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .watch h3 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #ffe600;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .watch img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .watch p {
+            color: rgb(255, 106, 0);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .watch {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .ipad {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .ipad h4 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #ff0000;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .ipad img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .ipad p {
+            color: rgb(0, 128, 255);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .TV {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .TV h4 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #0dff00;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .TV img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .TV p {
+            color: rgb(0, 128, 255);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .Airpods {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .Airpods h4 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #003cff;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .Airpods img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .Airpods p {
+            color: rgb(255, 0, 0);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .headphones {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .headphones h4 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #ff0000;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .headphones img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .headphones p {
+            color: rgb(0, 128, 255);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .Laptop {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .Laptop h4 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #ff0000;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .Laptop img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .Laptop p {
+            color: rgb(0, 128, 255);
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>APPLE</h1>
+
+    <div class="phone">
+
+        <h1>Phone</h1>
+
+        <div class="buttons">
+
+            <img src="https://www.apple.com/v/iphone-16-pro/a/images/meta/iphone-16-pro_specs__dnmdxvp6g7wy_og.png"
+                alt="iPhone 16 Pro">
+
+            <p>1.123.456 $</p>
+
+            <a href="https://www.apple.com/iphone/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="Laptop">
+
+        <h4>Apple Laptop</h4>
+
+        <div class="buttons">
+
+            <img src="https://cdn.mos.cms.futurecdn.net/wKaEoNvjNpRkyZH74YAq2B-1200-80.jpg" alt="Apple Laptop">
+
+            <p>1.000$</p>
+
+            <a href="https://www.apple.com/it/macbook-air/">CLICK ME</a>
+
+        </div>
+
+    </div>
+    <div class="watch">
+
+        <h3>Apple Watch</h3>
+
+        <div class="buttons">
+
+
+            <img src="https://tse4.mm.bing.net/th?id=OIP.QELyA_ITTrFaVpJ4buYPfgHaEK&pid=Api&P=0&h=180"
+                alt="Apple Watch">
+
+            <p>456 $</p>
+
+            <a href="https://www.apple.com/it/watch/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="ipad">
+
+        <h4>Apple iPad</h4>
+
+        <div class="buttons">
+
+            <img src="https://www.apple.com/newsroom/images/product/ipad/standard/apple_ipad-pro-spring21_hero_04202021_big.jpg.large.jpg"
+                alt="iPad">
+
+            <p>1.043.439 $</p>
+
+            <a href="https://www.apple.com/ipad/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="TV">
+
+        <h4>Apple TV</h4>
+
+        <div class="buttons">
+
+            <img src="https://siri-cdn.appadvice.com/wp-content/appadvice-v2-media/2017/08/apple-itv_fd31c5a07cef81a7815f2d7dc0c6af46-xl.jpg"
+                alt="Apple TV">
+
+            <p>1.432.885 $</p>
+
+            <a href="https://tv.apple.com/it">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="Airpods">
+
+        <h4>Apple AirPods</h4>
+
+        <div class="buttons">
+
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2022/09/Apple-AirPods-Pro.jpg" alt="AirPods">
+
+            <p>346$</p>
+
+            <a href="https://www.apple.com/it/airpods-pro/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="headphones">
+
+        <h4>Apple Headphones</h4>
+
+        <div class="buttons">
+
+            <img src="https://tse2.mm.bing.net/th?id=OIP._SAVcpLN9Gq3Pv-LU780uwHaE8&pid=Api&P=0&h=180"
+                alt="Apple Headphones">
+
+            <p>555$</p>
+
+            <a href="https://www.apple.com/it/airpods-max/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+
+    <a href="https://www.apple.com" class="buttton">Go to Apple</a>
+
+</body>
+
+</html>

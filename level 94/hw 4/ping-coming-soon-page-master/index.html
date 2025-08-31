@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .attribution {
+      font-size: 10px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .img-1{
+      height: 450px;
+    }
+
+    #input{
+      width: 350px;
+      padding: 12px 16px;
+      border: 2px solid rgb(161, 161, 161);
+      border-radius: 15px;
+      font-size: 16px;
+      transition: border color 0.3s ease, box-shadow 0.3s ease;
+      outline: none;
+    }
+
+    #input:focus{
+      border-color: orangered;
+    }
+
+
+    .btn{
+      background: rgb(21, 99, 189);
+      border-radius: 100px;
+      width: 150px;
+      color: white;
+      font-size: 17px;
+      height: 50px;
+    }
+
+    strong{
+      color: black;
+    }
+
+    h1{
+      color: lch(36.84% 1.04 236.21);
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <img src="./images/logo.svg" alt="" class="logo">
+
+  <h1>We are launching <strong>soon!</strong></h1>
+
+  <h3>Subscribe and get notified</h3>
+
+  <div class="box">
+
+    <input type="email" name="" id="input" placeholder="Your email adress">
+
+    <button class="btn">Notify Me</button>
+
+  </div>
+
+  <img src="./images/illustration-dashboard.png" alt="" class="img-1">
+
+  &copy; Copyright Ping. All rights reserved.
+
+  <footer>
+
+    <p class="attribution">
+
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+
+      Coded by <a href="#">Your Name Here</a>.
+
+    </p>
+
+  </footer>
+
+</body>
+
+</html>

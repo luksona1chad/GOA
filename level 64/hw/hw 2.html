@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #2980b9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+        }
+
+        button{
+            background-color: #ff0000;
+            color: rgb(43, 0, 255);
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            width: 200px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Tech Store</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">TVs</a>
+        <a href="#">Computers</a>
+        <a href="#">Accessories</a>
+    </nav>
+
+    <div class="product-container">
+        <div class="product">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.xh7zZ7REve1k33rH1HUzTgHaE8&pid=Api&P=0&h=180" alt="TV">
+            <h3>LED TV</h3>
+            <p>$499</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.kJYz7ls_0BSWM8g2wbTExwHaFj&pid=Api&P=0&h=180" alt="Computer">
+            <h3>Gaming PC</h3>
+            <p>$799</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tech Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-weight: bold;
+        }
+        
+        .slider-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .slider-img {
+            width: 700px;
+            margin: 0 auto 20px auto;
+        }
+        
+        .slider-img img {
+            width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0 0 25px rgb(104, 13, 153);
+            transition: all 300ms ease;
+        }
+        
+        .slider-img img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 60px rgb(183, 145, 41);
+        }
+        
+        .slider-img {
+            width: 700px;
+        }
+        
+        .slider-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .slider-buttons button {
+            padding: 20px 25px;
+            border: none;
+            border-radius: 10px;
+            background-color: #2c8d23;
+            color: #982222;
+            cursor: pointer;
+            transition: all 300ms ease;
+        }
+        
+        .slider-buttons button:hover {
+            background-color: rgb(53, 23, 186);
+        }
+        
+        .container {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 700px;
+            margin: 0 auto 20px auto;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            color: #004080;
+        }
+        
+        .container h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #750075;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="slider-container">
+
+        <div class="container">
+
+            <h1>SeaHorse</h1>
+
+            <p>A seahorse (also written sea-horse and sea horse) is any of 46 species of small marine bony fish in the genus Hippocampus. The genus name comes from the Ancient Greek hippókampos (ἱππόκαμπος), itself from híppos (ἵππος) meaning "horse" and
+                kámpos (κάμπος) meaning "sea monster"[4][5] or "sea animal".[6] Having a head and neck suggestive of a horse, seahorses also feature segmented bony armour, an upright posture and a curled prehensile tail.[7] Along with the pipefishes and
+                seadragons (Phycodurus and Phyllopteryx) they form the family Syngnathidae.</p>
+
+        </div>
+
+        <div class="slider-img">
+
+            <img id="img" src="./assets/photos/1.png" alt="" />
+
+        </div>
+
+        <div class="slider-buttons">
+
+            <button>left</button>
+
+            <button>right</button>
+
+        </div>
+
+    </div>
+
+    <script>
+        const img = document.getElementById("img");
+
+        const buttonsArray = document.querySelectorAll(".slider-buttons button");
+
+        const imgArray = [
+            "./image copy 16.png",
+
+            "./image copy 17.png",
+
+            "./image copy 18.png",
+
+            "./image copy 19.png",
+
+            "./image copy 20.png",
+
+        ];
+
+        let counter = 0;
+
+        buttonsArray[0].addEventListener("click", function() {
+
+            counter--;
+
+            if (counter < 0) {
+
+                counter = imgArray.length - 1;
+            }
+
+            img.src = imgArray[counter];
+
+        });
+
+        buttonsArray[1].addEventListener("click", function() {
+
+            counter++;
+
+            if (counter >= imgArray.length) {
+
+
+            }
+
+            img.src = imgArray[counter];
+
+        });
+    </script>
+
+</body>
+
+</html>

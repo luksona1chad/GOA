@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="bg-orange-400 p-6 rounded-lg shadow-lg max-w-md mx-auto mt-15 text-center">
+        <h1 class="text-black text-4xl font-bold">Yummy Food
+        </h1>
+    </div>
+    <div class="flex">
+        <div class="bg-green-300 mt-8 p-4 rounded-lg max-w-md mx-auto text-center">
+            <h1 class="text-black text-3xl font-bold">Margherita </h1>
+            <img src="https://www.scattidigusto.it/wp-content/uploads/2018/03/pizza-margherita-originale-Scatti-di-Gusto.jpg" alt="" class="w-full rounded-md shadow-md">
+
+        </div>
+        <div class="bg-red-300 mt-8 p-4 rounded-lg max-w-md mx-auto text-center">
+            <h1 class="text-black text-3xl font-bold">Cheeseburger</h1>
+            <img src="https://tse4.mm.bing.net/th/id/OIP.53bcjmlQ-HUWMvzpNPCkkwHaFS?pid=Api&P=0&h=180" alt="" class="w-full rounded-md shadow-md">
+        </div>
+    </div>
+    <div class="block">
+        <div class="bg-blue-300 mt-8 p-4 rounded-lg max-w-md mx-auto text-center">
+            <h1 class="text-black text-3xl font-bold">Salmon Sushi</h1>
+            <img src="https://tse1.mm.bing.net/th/id/OIP.gkGV_qhRgbuqdY1j0N9kIgHaHa?pid=Api&P=0&h=180" alt="" class="w-full rounded-md shadow-md">
+        </div>
+    </div>
+
+    <section class="fixed bottom-6 right-6 bg-white rounded-lg shadow-lg p-4 w-72 max-w-full">
+        <h3 class="text-xl font-bold mb-4 text-center text-blue-600">Your Cart</h3>
+        <ul class="divide-y divide-gray-300 max-h-64 overflow-y-auto mb-4">
+            <li class="py-2 flex justify-between items-center">
+                <span>Margherita Pizza</span>
+                <span>$12.99</span>
+            </li>
+            <li class="py-2 flex justify-between items-center">
+                <span>Cheeseburger</span>
+                <span>$9.99</span>
+            </li>
+            <li class="py-2 flex justify-between items-center">
+                <span>Salmon Sushi</span>
+                <span>9.90</span>
+            </li>
+        </ul>
+
+        <div class="font-bold flex justify-between text-lg border-t border-gray-300 pt-2">
+            <span>Total:</span>
+            <span>$22.98</span>
+        </div>
+        <button class="mt-4 bg-orange-500 text-white w-full py-2 rounded hover:bg-orange-600 transition">Checkout</button>
+    </section>
+
+</body>
+
+</html>

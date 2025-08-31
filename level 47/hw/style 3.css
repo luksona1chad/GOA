@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fbff00;
+    font-family: sans-serif;
+}
+.flex{
+    display: flex;
+    border: 5px solid black;
+    align-items: start;
+    align-items: end;
+    align-items: center;
+    justify-content: start;
+    align-items: end;
+    align-items: center;
+    height: 900px;
+    width: 100%;
+}
+.h1{
+    justify-self:  start;
+    color: blue;
+    background-color: aqua;
+}
+.h2{
+    justify-content:  center;
+    color: rgb(4, 0, 255);
+    background: #ff0000;
+}
+.h3{
+    justify-content: end;
+    color: rgb(0, 255, 251);
+    background: orangered;
+}

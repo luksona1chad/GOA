@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #ff0000;
+    color: rgb(21, 0, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(30, 0, 255);
+    font-size: 18px;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.login-card {
+    background-color: #00fbff;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px black;
+}
+
+.login-card h2 {
+    color: #9000ff;
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 16px;
+    color: #00ff2a;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #00ffe5;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #fffb00;
+    color: rgb(255, 42, 0);
+    margin: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+footer {
+    background-color: #008080;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #008080;
+    color: #9000ff;
+    font-family: sans-serif;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    .bounce {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+        
+        animation-name: bounce;
+        animation-timing-function: ease;
+        animation-duration: 2s;
+        animation-delay: 2000ms;
+        animation-iteration-count: 3;
+        animation-direction: normal;
+    }
+    @keyframes bounce {
+         0%{
+            transform: translateX(0px 0 px);
+            background-color: aqua;
+        }
+        20%{
+            transform: translate(500px, 250px);
+            background-color: blue; 
+        }
+        50%{
+            transform: translate(800px 300px);
+            background-color: green;
+        }
+        80%{
+            transform: translate(500px, 500px);
+            background-color: yellow;
+        }
+        100%{
+            transform: translate(0px, 0px);
+            background-color: red;
+        }
+    }
+
+</style>
+<body>
+    <div class="bounce"></div>
+</body>
+</html>

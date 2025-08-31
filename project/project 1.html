@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Business Website</title>
+  <style>
+    /* Reset Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ff0000;
+      color: #0026ff;
+    }
+
+    /* Header Section */
+    header {
+      background: linear-gradient(45deg, green, blue red yellow); 
+      color: rgb(0, 255, 242);
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3em;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #84ff00;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: rgb(255, 208, 0);
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #d000ff;
+    }
+
+    /* Main Content Section */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    /* Section Styles */
+    .section {
+      background-color: #0051ff;
+      border-radius: 8px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      margin-bottom: 60px;
+      overflow: hidden;
+      padding: 40px;
+    }
+
+    .section img {
+      width: 650px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      transition: ease-in;
+    }
+    @media active {
+      .section img {
+        width: 100%;
+      }
+    }
+
+    .section h2 {
+      font-size: 2.5em;
+      color: #00bcd4;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      line-height: 1.6;
+      font-size: 1.2em;
+      color: #00ff3c;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #00bcd4;
+      color: rgb(255, 0, 0);
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #0288d1;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #eeff00;
+      color: rgb(0, 72, 255);
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer p {
+      font-size: 1.1em;
+    }
+
+    footer a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to Our Stunning Business</h1>
+    <p>Innovation meets creativity in our world of solutions</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about-us">About Us</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Home Section -->
+    <div id="home" class="section">
+      <img src="https://www.travelandleisure.com/thmb/m1S-YwBV-_d4LAXIVSbtnbGdEQU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/business-class-boeing-787-10_BIZVSFIRST1222-4fa0de30da4e4d18bc58d08afac35e85.jpg" alt="Home">
+      <h2>Welcome to Our Business</h2>
+      <p>We offer a wide range of creative solutions to help your business grow and thrive.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services" class="section">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.EDFy9qRToNQErFJaJyQbygHaEK&pid=Api&P=0&h=180" alt="Our Services">
+      <h2>Our Services</h2>
+      <p>We offer a wide range of services tailored to meet your unique business needs. From web development to branding and marketing strategies, our team has the experience and tools to help you grow your business effectively.</p>
+      <a href="#" class="cta-button">Explore Our Services</a>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="section">
+      <img src="https://img.freepik.com/premium-photo/business-handshake_997428-389.jpg" alt="Our Portfolio">
+      <h2>Our Portfolio</h2>
+      <p>Take a look at some of our most recent projects. We've had the privilege of working with clients from various industries, and our work speaks for itself. Our portfolio showcases how we can turn ideas into reality with our creative solutions.</p>
+      <a href="#" class="cta-button">View Our Portfolio</a>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about-us" class="section">
+      <img src="https://www.travelandleisure.com/thmb/H0im8nfUEmS652H73xlP2IbMGqk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/first-class-airplace_BIZVSFIRST1222-a029d8f9f4834401a2872157e39090a7.jpg" alt="About Us">
+      <h2>About Us</h2>
+      <p>We are a dynamic team of professionals dedicated to providing high-quality services that help businesses succeed. Our mission is to bring creative, reliable, and impactful solutions to every project we work on, fostering long-term success for our clients.</p>
+      <a href="#" class="cta-button">Learn More About Us</a>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Whether you have a question, a project in mind, or just want to chat, our team is ready to assist. Get in touch with us today to start your journey toward success!</p>
+      <a href="#" class="cta-button">Get In Touch</a>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Beautiful Business Website. All Rights Reserved. <br> <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
+
+</body>
+</html>

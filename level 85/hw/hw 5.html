@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ტექსტის ფერის შეცვლა</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .myText {
+            color: black;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="myText">HELLO WORLD!</p>
+    <button onclick="changeColor()">შეიცვალე HELLO WORLD! წითლად</button>
+
+    <script>
+        function changeColor() {
+            const text = document.getElementById('myText');
+            text.style.color = 'green';
+        }
+    </script>
+</body>
+
+</html>

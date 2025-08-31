@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Random Background Color</title>
+
+</head>
+
+<body id="body">
+
+    <h1>Backgroungs</h1>
+
+    <button onclick="handleBgChange()" type="button">click me for changed backgroung</button>
+
+    <script>
+        
+
+        const body = document.getElementById("body");
+
+        function handleBgChange() {
+
+            let colors = ["red", "blue", "green", "purple", "yellow", "aqua"];
+
+            const randomIndex = Math.floor(Math.random() * 6);
+
+            body.style.backgroundColor = colors[randomIndex];
+
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #ff0000;
+    color: rgb(123, 255, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    color: rgb(0, 255, 251);
+}
+
+.notebook-collection {
+    display: block;
+    padding: 30px;
+}
+
+.notebook-card {
+    background-color: rgb(34, 0, 255);
+    padding: 20px;
+    width: 300px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 35px;
+}
+
+.notebook-card img {
+    width: 100%;
+}
+
+.notebook-card h2 {
+    color: #aa00ff;
+    margin: 10px ;
+}
+
+.price {
+    font-size: 20px;
+    color: #ff3c00;
+    margin: 10px;
+}
+
+.actions {
+    display: block;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: rgb(22, 145, 6);
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #ff0000;
+    color: rgb(0, 0, 255);
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}

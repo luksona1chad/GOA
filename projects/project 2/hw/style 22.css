@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #0000ff;
+    color: #ff0000;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    color: #00ff00;
+}
+
+.motorcycle-collection {
+    display: block;
+    padding: 30px;
+}
+
+.motorcycle-card {
+    background-color: #0000ff;
+    padding: 20px;
+    width: 300px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 35px;
+}
+
+.motorcycle-card img {
+    width: 100%;
+}
+
+.motorcycle-card h2 {
+    color: #ff6600;
+    margin: 10px;
+}
+
+.price {
+    font-size: 20px;
+    color: #ff0000;
+    margin: 10px;
+}
+
+.actions {
+    display: block;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px;
+    background-color: #00690567;
+    color: #ffff00;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #c300ff;
+    color: #001eff;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}

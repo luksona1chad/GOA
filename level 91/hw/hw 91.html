@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Counter Example</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            text-align: center;
+            padding: 150px;
+            background: rgb(255, 111, 0);
+        }
+
+        button {
+            padding: 25px 35px;
+            border-radius: 5px;
+            background-color: #1aff00;
+            color: #7b00ff;
+            height: 75px;
+            margin: 35px;
+            font-size: 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <span id="span">0</span>
+
+    <button onclick="increase()">Incrise</button>
+
+    <button onclick="decrease()">Decrise</button>
+
+    <button onclick="reset()">Reset</button>
+
+    <button onclick="bgs()">Click me for changed bgs</button>
+
+    <script>
+
+        let count = 0;
+
+        const span = document.getElementById("span");
+
+        function increase() {
+
+            count++
+
+            span.textContent = count;
+
+        }
+
+        function decrease() {
+
+            count--
+
+            span.textContent = count;
+
+        }
+
+        function reset() {
+
+            count = 0;
+
+            span.textContent = count;
+
+        }
+
+        function bgs() {
+
+            const colors = ['red', 'blue', 'aqua', 'green', 'gold', 'pink', 'purple', 'orange', 'yellow', 'lightblue', 'black', 'white', 'gray', 'brown', 'cyan', 'magenta', 'lime', 'navy', 'teal', 'maroon', 'olive', 'silver', 'indigo', 'violet', 'coral', 'salmon', 'khaki', 'plum', 'orchid', 'tan', 'peach', 'lavender', 'mint', 'beige', 'chocolate', 'crimson', 'darkblue', 'darkgreen', 'darkred', 'darkviolet', 'firebrick', 'goldenrod', 'hotpink', 'lightcoral', 'lightgreen', 'lightsalmon', 'lightseagreen', 'lightsteelblue', 'mediumblue', 'mediumorchid', 'mediumseagreen', 'mediumvioletred', 'palegoldenrod', 'palegreen', 'paleturquoise', 'palevioletred', 'sandybrown', 'seashell', 'skyblue', 'slateblue', 'slategray', 'springgreen', 'steelblue', 'thistle', 'tomato', 'turquoise', 'wheat', 'yellowgreen', 'aliceblue', 'antiquewhite', 'aqua', 'aquamarine', 'azure', 'beige', 'bisque', 'blanchedalmond', 'blueviolet', 'brown', 'burlywood', 'cadetblue', 'chartreuse', 'chocolate', 'coral', 'cornflowerblue', 'cornsilk', 'crimson', 'cyan', 'darkcyan', 'darkkhaki', 'darkmagenta', 'darkorange', 'darkorchid', 'darkslateblue', 'darkslategray', 'darksalmon', 'darkseagreen', 'darkslategray', 'darkturquoise', 'darkviolet', 'deeppink', 'deepskyblue', 'dimgray', 'dodgerblue', 'firebrick', 'floralwhite', 'forestgreen', 'fuchsia', 'gainsboro', 'ghostwhite', 'goldenrod', 'gray', 'greenyellow', 'honeydew', 'hotpink', 'indianred', 'ivory', 'khaki', 'lavenderblush', 'lawngreen', 'lemonchiffon', 'lightblue', 'lightcyan', 'lightgoldenrodyellow', 'lightgray', 'lightpink', 'lightslategray', 'lightyellow', 'limegreen', 'linen', 'mediumaquamarine', 'mediumblue', 'mediumslateblue', 'mediumspringgreen', 'mediumturquoise', 'mediumvioletred', 'midnightblue', 'mintcream', 'mistyrose', 'moccasin', 'navajowhite', 'oldlace', 'olivedrab', 'orangered', 'orchid', 'palegoldenrod', 'palegreen', 'paleturquoise', 'palevioletred', 'papayawhip', 'peachpuff', 'peru', 'pink', 'plum', 'powderblue', 'rosybrown', 'royalblue', 'saddlebrown', 'salmon', 'sandybrown', 'seashell', 'sienna', 'skyblue', 'slateblue', 'slategray', 'snow', 'springgreen', 'steelblue', 'tan', 'thistle', 'tomato', 'turquoise', 'violet'];
+
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+            document.body.style.backgroundColor = randomColor;
+
+        }
+
+    </script>
+
+</body>
+
+</html>

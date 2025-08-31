@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Color Converter</title>
+
+    <style>
+
+        /* RESET CSS */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px black;
+            width: 100%;
+            max-width: 500px;
+            border: 1px solid black;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 30px;
+            background: white;
+        }
+
+        .color-preview {
+            width: 100%;
+            height: 120px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 5px solid white;
+            transition: all 0.3s ease;
+            background: black;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-label {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 15px;
+            font-weight: 600;
+            color: #667eea;
+            pointer-events: none;
+        }
+
+        .color-input {
+            width: 100%;
+            padding: 15px 20px 15px 50px;
+            border: 2px solid white;
+            border-radius: 12px;
+            background: white;
+            font-size: 15px;
+            color: black;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .color-input:focus {
+            border-color: #667eea;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .description {
+            text-align: center;
+            color: black;
+            font-size: 14px;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            outline: none;
+        }
+
+        .btn-oklch {
+            background: white;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .btn-oklch:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-lch {
+            color: black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="title">Color Converter</h1>
+
+        <div class="color-preview" id="colorPreview"></div>
+
+        <div class="input-group">
+
+            <span class="input-label">O</span>
+
+            <input type="text" class="color-input" id="oklchInput" placeholder="oklch(0.6 0.2 240)" value="oklch(0.6 0.2 240)">
+
+        </div>
+
+        <div class="input-group">
+
+            <span class="input-label">#</span>
+
+            <input type="text" class="color-input" id="hexInput" placeholder="#000000">
+
+        </div>
+
+        <p class="description">Paste HEX/RGB/HSL to convert to OKLCH</p>
+
+        <div class="button-group">
+
+            <button class="btn btn-oklch" id="oklchBtn">OKLCH</button>
+
+            <button class="btn btn-lch" id="lchBtn">LCH</button>
+
+        </div>
+
+        <div class="footer">
+
+            <p>Made at <strong>Evil Martians</strong>,</p>
+
+            <p>devtools building consultancy.</p>
+
+            <p>By <strong>Andrey Sitnik</strong> & <strong>Roman Shamin</strong></p>
+
+        </div>
+
+    </div>
+    
+</body>
+
+</html>

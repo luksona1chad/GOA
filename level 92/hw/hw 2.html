@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Samsung</title>
+
+    <style>
+        /* RESET CSS */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            font-size: 35px;
+            background: linear-gradient(to right, #00c8ff, #0004ff);
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .buttons a {
+            font-family: 'Titillium Web', Arial, sans-serif;
+            text-decoration: none;
+            background-color: #ff0000;
+            color: rgb(34, 255, 0);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 35px;
+            transition: 0.2s;
+        }
+
+        .buttons a:hover {
+            background-color: #9000ff;
+        }
+
+        .buttton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff0000;
+            color: rgb(34, 255, 0);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 35px;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .buttton:hover {
+            background-color: #9000ff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0004ff;
+            font-size: 50px;
+            margin: 20px;
+        }
+
+        .phone h1 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #00ff37;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .phone img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .phone p {
+            color: rgb(0, 225, 255);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .phone {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .laptop img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .laptop p {
+            color: rgb(255, 0, 0);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .laptop {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .laptop h2 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #7300ff;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .watch h3 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #ffe600;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .watch img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .watch p {
+            color: rgb(255, 106, 0);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .watch {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .ipad {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .ipad h4 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #ff0000;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .ipad img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .ipad p {
+            color: rgb(0, 128, 255);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .TV {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .TV h4 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #0dff00;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .TV img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .TV p {
+            color: rgb(0, 128, 255);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .Airpods {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .Airpods h4 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #003cff;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .Airpods img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .Airpods p {
+            color: rgb(255, 0, 0);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .headphones {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .headphones h4 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #ff0000;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .headphones img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .headphones p {
+            color: rgb(0, 128, 255);
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .Laptop {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .Laptop h4 {
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #ff0000;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .Laptop img {
+            width: 65%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .Laptop p {
+            color: rgb(0, 128, 255);
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Samsung</h1>
+
+    <div class="phone">
+
+        <h1>Phone</h1>
+
+        <div class="buttons">
+
+            <img src="https://static.independent.co.uk/2021/08/20/12/Samsung%20Fold%20review%20copy.jpg" alt="">
+
+            <p>1.123.456 $</p>
+
+            <a
+                href="https://www.refurbed.it/c/telefoni-samsung/?msclkid=f847c05e45871c4e6098a87fc8915e36&utm_source=bing&utm_medium=cpc&utm_campaign=IT%20-%20Search%20-%20Smartphones%20-%20Generic%20%2B%20Brands%20%7C%2001s%20-%20All%20Brands&utm_term=samsung%20telefoni%20cellulari&utm_content=Brands%20-%20Samsung">CLICK
+                ME</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="Laptop">
+
+        <h4>Samsung Laptop</h4>
+
+        <div class="buttons">
+
+            <img src="https://tse4.mm.bing.net/th?id=OIP.nsC3wL9_ps1FknerofhnBgHaEK&pid=Api&P=0&h=180"
+                alt="Samsung Laptop">
+
+            <p>1.000$</p>
+
+            <a
+                href="https://www.prezzo.org/prezzi?utm_term=samsung%20laptop&q=samsung%20laptop&kwcat=3751&tpid=rsa-os&utm_campaign=Notebook_3751&ic_id=894c734d16bd0ca536e0d6bd6d954f72c6cc58c58d73af9b0d8f457876726a0a&utm_medium=cpc&kwtype=keyword&device=c&msclkid=4d42254325261e25da6b4d62a87027cf&utm_source=bing&utm_content=3751_00267">CLICK
+                ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="watch">
+
+        <h3>Samsung Watch</h3>
+
+        <div class="buttons">
+
+
+            <img src="https://tse1.mm.bing.net/th?id=OIP.MUmIfkDBVgtZMOMYp2Nm_AHaFP&pid=Api&P=0&h=180"
+                alt="Samsung Watch">
+
+            <p>456 $</p>
+
+            <a href="https://www.samsung.com/it/watches/galaxy-watch/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="ipad">
+
+        <h4>Samsung iPad</h4>
+
+        <div class="buttons">
+
+            <img src="https://i.ytimg.com/vi/eJn35AhLHNo/maxresdefault.jpg" alt="Samsung iPad">
+
+            <p>1.043.439 $</p>
+
+            <a
+                href="https://www.samsung.com/it/tablets/?product1=sm-x920nzapeue&product2=sm-x820nzapeue&product3=sm-x710nzaaeue">CLICK
+                ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="TV">
+
+        <h4>Samsung TV</h4>
+
+        <div class="buttons">
+
+            <img src="https://www.sammobile.com/wp-content/uploads/2023/05/Samsung-8K-Neo-QLED-TV-2023-Pre-Order-Offer-India.jpeg"
+                alt="Samsung TV">
+
+            <p>1.432.885 $</p>
+
+            <a href="https://www.samsung.com/it/tvs/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="Airpods">
+
+        <h4>Samsung AirPods</h4>
+
+        <div class="buttons">
+
+            <img src="https://tse4.mm.bing.net/th?id=OIP.ZRuapXSo9q_jEoRBTQMo7wHaD4&pid=Api&P=0&h=180"
+                alt="Samsung AirPods">
+
+            <p>346$</p>
+
+            <a href="https://www.samsung.com/it/audio-sound/galaxy-buds/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+    <div class="headphones">
+
+        <h4>Samsung Headphones</h4>
+
+        <div class="buttons">
+
+            <img src="https://tse2.mm.bing.net/th?id=OIP.zhBjHPV5z7ZT1eBG7qbiswHaEm&pid=Api&P=0&h=180"
+                alt="Samsung Headphones">
+
+            <p>555$</p>
+
+            <a href="https://www.samsung.com/it/audio-sound/galaxy-buds/">CLICK ME</a>
+
+        </div>
+
+    </div>
+
+
+    <a href="https://www.samsung.com/it/" class="buttton">Go to Samsung</a>
+
+
+</body>
+
+</html>

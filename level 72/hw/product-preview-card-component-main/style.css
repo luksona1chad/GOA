@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font-primary {
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-secondary {
+  font-family: "Fraunces", serif;
+}
+
+.text-green-500 {
+  color: hsl(158, 36%, 37%);
+}
+
+.text-green-700 {
+  color: hsl(158, 42%, 18%);
+}
+
+.text-black {
+  color: hsl(212, 21%, 14%);
+}
+
+.text-gray {
+  color: hsl(212, 21%, 14%);
+}
+
+.text-cream {
+  color: hsl(30, 38%, 92%);
+}
+
+.text-white {
+  color: hsl(0, 0%, 100%);
+}
+
+
+.bg-green-500 {
+  background: hsl(158, 36%, 37%);
+}
+
+.bg-green-700 {
+  background: hsl(158, 42%, 18%);
+}
+
+.bg-black {
+  background: hsl(212, 21%, 14%);
+}
+
+.bg-gray {
+  background: hsl(212, 21%, 14%);
+}
+
+.bg-cream {
+  background: hsl(30, 38%, 92%);
+}
+
+.bg-white {
+  background: hsl(0, 0%, 100%);
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.text-line-though {
+  text-decoration: line-through;
+}

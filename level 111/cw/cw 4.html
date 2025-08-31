@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="Elements">სტილის შესაცვლელი ტექსტი</h1>
+    <button onclick="changeStyles()" id="Button">შეცვალე სტილი</button>
+
+    <script>
+        function changeStyles() {
+            let element = document.getElementById("Elements");
+            let button = document.getElementById("Button");
+            element.style.color = "white";
+            element.style.backgroundColor = "green";
+            element.style.fontSize = "30px";
+            element.style.padding = "15px";
+            element.style.borderRadius = "10px";
+            element.style.textAlign = "center";
+            element.style.fontFamily = "Arial, sans-serif";
+            element.style.border = "2px solid black";
+            element.style.boxShadow = "0 4px 8px rgba(3, 4, 5, 1.5)";
+            button.style.backgroundColor = "black";
+            button.style.color = "white";
+            button.style.padding = "10px 20px";
+            button.style.borderRadius = "5px";
+            button.style.border = "none";
+            button.style.cursor = "pointer";
+            button.style.fontSize = "16px";
+            button.style.transition = "background-color 0.3s ease";
+            button.innerText = "სტილი შეცვლილია!";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 150vh;
+    background-color: #0800ff, green, red, orangered;
+}
+
+
+button {
+    padding: 100px;
+    color: rgb(255, 0, 0);
+    border-radius: 250px;
+    background-image: linear-gradient(to right, #ff3700, #04a116a3, red);
+}
+
