@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /**
+         * 1) შექმანეით numbers-მასივი, რომელშიც იქნება რამდენიმე რიცხვი. შემდეგ გამოიყენე forEach ფუნქცია, რათა თითოეული რიცხვის მნიშვნელობა გაორმაგდეს.
+        მაგალითი:  const numbers = [1, 2, 3, 4, 5]; -- > // შედეგი: [2, 4, 6, 8, 10]
+        
+        2) შექმენი მასივში უნდა იყოს  როგორც დადებითი ასევე უარყოფითი . გამოიყენე forEach და დაითვალე რამდენი დადებითი რიცხვია მასივში.
+        მაგალითი: const numbers = [-3, 1, -5, 6, 8, -2]; -- >// შედეგი: 3
+        
+        3) შექმენი მასივი, რომელშიც განთავსდება სხვადასხვა სახის სტრინგები. შემდეგ, გამოიყენე forEach, რათა თითოეულ სტრინგს დაემატოს მინიმუმ 2 სიმბოლო (მაგალითად, დამატება "!!" თითოეულ სტრინგზე).
+        მაგალითი: const strings = ["apple", "banana", "orange"]; -- > // შედეგი: ["apple!!", "banana!!", "orange!!"]
+        
+        4)შექმენი მასივი ობიექტებისგან, სადაც თითოეულ ობიექტს აქვს ასაკი და სახელი. გამოიყენე forEach, რათა გაფილტროთ მხოლოდ ის რომელთა სახელი "x" არის.
+        მაგალითი: const users = [
+          { name: "Alice", age: 25 },
+          { name: "x", age: 30 },
+          { name: "Bob", age: 35 },
+          { name: "x", age: 28 }
+        ];
+        -- > // შედეგი: [{ name: "x", age: 30 }, { name: "x", age: 28 }]
+        */
+        //1
+        const numbers = [1, 2, 3, 4, 5];
+
+        numbers.forEach((value, index, arr) => {
+            arr[index] = value * 2;
+        });
+
+        console.log(numbers);
+
+        //2
+        const number = [-3, 1, -5, 6, 8, -2];
+
+        number.forEach(num => {
+            if (num > 0) {
+                console.log(num);
+            }
+        });
+
+        //3
+        const strings = ["apple", "banana", "orange"];
+
+        strings.forEach(str => {
+            console.log(str + '!!');
+        });
+
+        // 4
+        const users = [
+            { name: "Alice", age: 25 },
+            { name: "x", age: 30 },
+            { name: "Bob", age: 35 },
+            { name: "x", age: 28 }
+        ];
+
+        users.forEach(obj => {
+            if (obj.name === 'x') {
+                console.log(obj);
+            }
+        });
+    </script>
+</body>
+
+</html>
