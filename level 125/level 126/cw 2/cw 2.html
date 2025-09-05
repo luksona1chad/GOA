@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌍 DSID Map Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <style>
+    #map { height: 100vh; }
+    .leaflet-popup-content-wrapper {
+      background-color: #1e293b;
+      color: white;
+      border-radius: 0.5rem;
+    }
+    .leaflet-popup-tip {
+      background-color: #1e293b;
+    }
+  </style>
+</head>
+<body class="bg-slate-900 text-white">
+
+  <div class="text-center py-6">
+    <h1 class="text-4xl font-bold text-cyan-400 drop-shadow">🌐 DSID Map Viewer</h1>
+    <p class="text-gray-300 mt-2">ყველა ქვეყანა, ზუსტად და ლამაზად რუკაზე</p>
+  </div>
+
+  <div id="map" class="rounded shadow-xl border border-cyan-500"></div>
+
+  <script>
+    const map = L.map('map').setView([20, 0], 2);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap contributors & CartoDB',
+    }).addTo(map);
+
+    const geoJsonUrl = 'https://raw.githubusercontent.com/Stefie/geojson-world/master/countries.geojson';
+
+    fetch(geoJsonUrl)
+      .then(res => res.json())
+      .then(data => {
+        L.geoJSON(data, {
+          style: () => ({
+            color: '#22d3ee',
+            weight: 1,
+            fillColor: '#0ea5e9',
+            fillOpacity: 0.5,
+          }),
+          onEachFeature: (feature, layer) => {
+            const name = feature.properties.name || 'უცნობი ქვეყანა';
+            layer.bindPopup(`<div class="text-center">
+              <h2 class="text-lg font-semibold text-cyan-300">${name}</h2>
+            </div>`);
+            layer.on({
+              mouseover: e => e.target.setStyle({ fillOpacity: 0.8 }),
+              mouseout: e => e.target.setStyle({ fillOpacity: 0.5 }),
+            });
+          }
+        }).addTo(map);
+      })
+      .catch(err => console.error('Error loading GeoJSON:', err));
+  </script>
+
+</body>
+</html>
