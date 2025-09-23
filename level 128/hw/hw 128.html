@@ -1,11 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+            body {
+                font-family: "Inter", sans-serif;
+            }
+        </style>
+    </head>
+    <body class="bg-[#F5F7FA]">
+        <header
+            class="max-w-[1440px] flex items-center justify-between mx-auto py-[22px]"
+        >
+            <div>
+                <!--logo-->
+                <img src="./assets/logo.svg" alt="Logo" />
+            </div>
+            <!--ul-->
+            <ul
+                class="flex gap-10 [&>li]:text-[#18191F] [&>li]:text-[16px] [&>li]:leading-[24px] [&>li]:hover:font-bold transition-all"
+            >
+                <li>Home</li>
+                <li>Service</li>
+                <li>Feature</li>
+                <li>Product</li>
+                <li>Testimonial</li>
+                <li>FAQ</li>
+            </ul>
+            <div
+                class="space-x-[14px] font-normal [&>button]:text-[14px] [&>button]:leading-[20px]"
+            >
+                <!--login\register -->
+                <button class="text-[#4CAF4F]">Login</button>
+                <button
+                    class="bg-[#4CAF4F] px-[20px] py-[10px] rounded-md text-white"
+                >
+                    Sign Up
+                </button>
+            </div>
+        </header>
+    </body>
 </html>

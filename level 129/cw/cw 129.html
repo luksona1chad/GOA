@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>    // foreach, map, filter
+        // API / Application Programming Interface
+        // one thread / ერთ ძაფიანი
+        // sync / async  <--->   სიქრონული / ასინქრონული
+
+        function step1() {
+            return "step1" // გამოიტანს step 1-ს
+        }
+        function step2() {
+            return "step2"// გამოიტანს step 2-ს
+        }
+        function asynoFunc() {
+            setTimeout(() => {
+                return "lomi 2"
+            }, 2000)
+        }
+        function asynoFunc2() {
+            setTimeout(() => {
+                return "lomi 2"
+            }, 2000)
+        } // ორი წამის შემდეგ გამოიტანს
+        console.log((asonFunc2))
+        console.log((asonFunc))
+        console.log((step1))
+        console.log((step2))
+    </script>
+</body>
+
+</html>
