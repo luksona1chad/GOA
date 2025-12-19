@@ -1,0 +1,27 @@
+header {
+    background: rgb(200, 200, 200);
+    padding: 40px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header ul li:hover {
+    font-weight: 600;
+}
