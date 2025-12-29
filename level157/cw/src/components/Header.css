@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 100vh;
+    background-image: url('./assets/images/f.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header-d {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.header-d h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.header-d button {    
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 14px 36px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.header-d button:hover {
+    background: white;
+    color: black;
+}
